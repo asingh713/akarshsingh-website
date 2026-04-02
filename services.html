@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Technical consulting services for small businesses — Akarsh Singh, Raleigh-Durham."
+    />
+    <title>Services — Akarsh Singh</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+            },
+            colors: {
+              surface: "#090b0f",
+              elevated: "#0f1318",
+              card: "#141920",
+              border: "#1e2a35",
+              accent: "#22d3ee",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  </head>
+  <body
+    class="min-h-dvh text-zinc-200 antialiased font-sans"
+    style="background: radial-gradient(ellipse at 20% 0%, #0d1f2d 0%, #090b0f 60%)"
+  >
+    <div
+      class="pointer-events-none fixed inset-0 z-0 opacity-[0.03]"
+      style="background-image: url('https://www.transparenttextures.com/patterns/noise.png')"
+    ></div>
+    <div class="relative z-10 flex flex-col min-h-dvh">
+      <header
+        class="sticky top-0 z-50 border-b border-border/60 bg-surface/80 backdrop-blur-md"
+      >
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between"
+        >
+          <a href="index.html" class="flex items-center gap-2 group">
+            <div
+              class="w-7 h-7 rounded-md bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center group-hover:bg-cyan-500/30 transition-colors"
+            >
+              <i data-lucide="shield" class="w-3.5 h-3.5 text-cyan-400"></i>
+            </div>
+            <span class="text-sm font-bold text-white tracking-tight"
+              >Akarsh Singh</span
+            >
+          </a>
+
+          <button
+            id="nav-toggle"
+            class="md:hidden p-2 rounded-md text-zinc-400 hover:text-white hover:bg-white/5 transition-colors grid place-items-center"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span id="nav-icon-open" class="col-start-1 row-start-1 inline-flex"
+              ><i data-lucide="menu" class="w-5 h-5"></i
+            ></span>
+            <span
+              id="nav-icon-close"
+              class="hidden col-start-1 row-start-1 inline-flex"
+              ><i data-lucide="x" class="w-5 h-5"></i
+            ></span>
+          </button>
+
+          <nav class="hidden md:flex items-center gap-1" aria-label="Primary">
+            <a
+              href="index.html"
+              class="px-3 py-1.5 rounded-md text-sm font-medium transition-colors text-zinc-400 hover:text-white hover:bg-white/5"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="px-3 py-1.5 rounded-md text-sm font-medium transition-colors text-white bg-white/8"
+              >Consulting &amp; Services</a
+            >
+          </nav>
+        </div>
+
+        <div
+          id="nav-mobile"
+          class="hidden md:hidden border-t border-border/60 bg-surface/95 px-4 py-3 space-y-1"
+        >
+          <a
+            href="index.html"
+            class="block px-3 py-2 rounded-md text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 transition-colors"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            class="block px-3 py-2 rounded-md text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 transition-colors"
+            >Consulting &amp; Services</a
+          >
+        </div>
+      </header>
+
+      <section
+        class="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-8 md:pt-16 md:pb-10"
+      >
+        <div
+          class="flex flex-col md:flex-row md:items-end md:justify-between gap-4"
+        >
+          <div class="space-y-3">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-medium"
+            >
+              <i data-lucide="map-pin" class="w-3 h-3"></i>
+              Raleigh-Durham, NC
+            </div>
+            <h1
+              class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight"
+            >
+              Small Business<br class="hidden sm:block" /> Tech Services
+            </h1>
+            <p class="text-zinc-400 text-sm max-w-md leading-relaxed">
+              Practical, affordable technology solutions for businesses in the
+              Greater Triangle area.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-zinc-400 text-xs font-medium"
+            >
+              <i data-lucide="badge-check" class="w-3 h-3 text-cyan-400"></i>
+              CompTIA Sec+
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-zinc-400 text-xs font-medium"
+            >
+              <i data-lucide="badge-check" class="w-3 h-3 text-cyan-400"></i>
+              CCSK
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-zinc-400 text-xs font-medium"
+            >
+              <i data-lucide="badge-check" class="w-3 h-3 text-cyan-400"></i>
+              ITIL 4
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-zinc-400 text-xs font-medium"
+            >
+              <i data-lucide="badge-check" class="w-3 h-3 text-cyan-400"></i>
+              Jamf Certified
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-zinc-400 text-xs font-medium"
+            >
+              <i data-lucide="badge-check" class="w-3 h-3 text-cyan-400"></i>
+              ACMT
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 py-10 md:py-14"
+      >
+        <div class="max-w-3xl mx-auto space-y-6">
+          <section
+            aria-labelledby="services-intro-heading"
+            class="rounded-xl border border-border bg-card shadow-xl shadow-black/40 p-6 sm:p-8 hover:border-border/80 transition-colors duration-300"
+          >
+            <h2
+              id="services-intro-heading"
+              class="text-lg font-semibold text-white mb-4 tracking-tight flex items-center"
+            >
+              <i
+                data-lucide="building-2"
+                class="w-4 h-4 text-cyan-400 mr-2 inline-block"
+              ></i>
+              Technical Consulting Services for Small Businesses
+            </h2>
+            <p class="text-cyan-400 text-sm font-medium mb-4">
+              Helping your business be more efficient and profitable with Small
+              Business Technology Services
+            </p>
+            <div class="space-y-4 max-w-prose">
+              <p
+                class="text-zinc-300 leading-relaxed text-[0.9375rem] sm:text-base"
+              >
+                Running a small business is hard enough — technology shouldn't make
+                it harder. I help small businesses in the Greater Triangle area
+                of North Carolina get set up, organized, and running efficiently
+                so owners and teams can focus on what they do best.
+              </p>
+              <p
+                class="text-zinc-300 leading-relaxed text-[0.9375rem] sm:text-base"
+              >
+                I have a personal connection to small businesses. Growing up as a
+                child of immigrants who ran their own business, I saw firsthand
+                the dedication, creativity, and hard work that goes into making a
+                business succeed. That experience drives why I provide practical,
+                affordable, and effective technology solutions that help businesses
+                operate smoothly, securely, and efficiently.
+              </p>
+            </div>
+          </section>
+
+          <section
+            aria-labelledby="services-offered-heading"
+            class="rounded-xl border border-border bg-card shadow-xl shadow-black/40 p-6 sm:p-8 hover:border-border/80 transition-colors duration-300"
+          >
+            <h2
+              id="services-offered-heading"
+              class="text-lg font-semibold text-white mb-4 tracking-tight flex items-center"
+            >
+              <i
+                data-lucide="list-checks"
+                class="w-4 h-4 text-cyan-400 mr-2 inline-block"
+              ></i>
+              Services Offered
+            </h2>
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <i
+                  data-lucide="monitor"
+                  class="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0"
+                ></i>
+                <span
+                  ><span class="font-semibold text-zinc-100"
+                    >Hardware &amp; Device Setup</span
+                  ><span class="text-zinc-400">
+                    — Desktops, laptops, mobile devices, and peripherals</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <i
+                  data-lucide="wifi"
+                  class="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0"
+                ></i>
+                <span
+                  ><span class="font-semibold text-zinc-100"
+                    >Networking Solutions</span
+                  ><span class="text-zinc-400">
+                    — Routers, switches, Wi-Fi systems, firewalls, and secure
+                    network configuration</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <i
+                  data-lucide="cloud"
+                  class="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0"
+                ></i>
+                <span
+                  ><span class="font-semibold text-zinc-100"
+                    >Software &amp; Cloud Tools</span
+                  ><span class="text-zinc-400">
+                    — Email systems, collaboration platforms, cloud storage,
+                    business applications, and SaaS management</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <i
+                  data-lucide="bot"
+                  class="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0"
+                ></i>
+                <span
+                  ><span class="font-semibold text-zinc-100"
+                    >Workflow Automation &amp; AI Integration</span
+                  ><span class="text-zinc-400">
+                    — Streamline tasks and integrate AI tools where they make
+                    sense</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <i
+                  data-lucide="shield"
+                  class="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0"
+                ></i>
+                <span
+                  ><span class="font-semibold text-zinc-100"
+                    >Cybersecurity &amp; Physical Security</span
+                  ><span class="text-zinc-400">
+                    — Endpoint protection, access management, cameras, sensors,
+                    and access control</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <i
+                  data-lucide="wrench"
+                  class="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0"
+                ></i>
+                <span
+                  ><span class="font-semibold text-zinc-100"
+                    >Tech Upgrades &amp; IT Support</span
+                  ><span class="text-zinc-400">
+                    — Ongoing support, refreshes, and upgrades to keep systems
+                    current</span
+                  ></span
+                >
+              </li>
+              <li class="flex items-start gap-3">
+                <i
+                  data-lucide="plus-circle"
+                  class="w-4 h-4 text-cyan-400 mt-0.5 flex-shrink-0"
+                ></i>
+                <span
+                  ><span class="font-semibold text-zinc-100"
+                    >Additional Services</span
+                  ><span class="text-zinc-400">
+                    — For services not listed here, please inquire</span
+                  ></span
+                >
+              </li>
+            </ul>
+            <p class="text-zinc-400 text-sm mt-4">
+              Pricing depends on your specific needs and the size of your business.
+              I'm happy to provide free quotes for all services.
+            </p>
+          </section>
+
+          <section
+            aria-labelledby="quote-heading"
+            class="rounded-xl border border-border bg-card shadow-xl shadow-black/40 p-6 sm:p-8 hover:border-border/80 transition-colors duration-300"
+          >
+            <h2
+              id="quote-heading"
+              class="text-lg font-semibold text-white mb-4 tracking-tight flex items-center"
+            >
+              <i
+                data-lucide="clipboard-list"
+                class="w-4 h-4 text-cyan-400 mr-2 inline-block"
+              ></i>
+              Request a Free Quote
+            </h2>
+            <p class="text-zinc-400 text-sm text-center mb-6">
+              In order to help me provide you with an accurate estimate and
+              tailored recommendations, please complete the form below. Provide as
+              much detail as you feel is necessary, and be sure to include a good
+              contact email or phone number. Thanks for considering us for your
+              business technology needs — I look forward to working with you!
+            </p>
+            <form
+              action="https://formspree.io/f/mjgpebkg"
+              method="POST"
+              class="space-y-5"
+            >
+              <input
+                type="hidden"
+                name="_subject"
+                value="Business Inquiry — akarshsingh.com"
+              />
+              <div>
+                <label
+                  for="quote-name"
+                  class="block text-sm font-medium text-zinc-300 mb-2"
+                  >Full Name</label
+                >
+                <input
+                  type="text"
+                  id="quote-name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                  class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30"
+                  placeholder="Your full name"
+                />
+              </div>
+              <div>
+                <label
+                  for="quote-business"
+                  class="block text-sm font-medium text-zinc-300 mb-2"
+                  >Business Name</label
+                >
+                <input
+                  type="text"
+                  id="quote-business"
+                  name="business_name"
+                  required
+                  autocomplete="organization"
+                  class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30"
+                  placeholder="Your business name"
+                />
+              </div>
+              <div>
+                <label
+                  for="quote-location"
+                  class="block text-sm font-medium text-zinc-300 mb-2"
+                  >Business Location</label
+                >
+                <input
+                  type="text"
+                  id="quote-location"
+                  name="location"
+                  required
+                  class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30"
+                  placeholder="City, State"
+                />
+              </div>
+              <div>
+                <label
+                  for="quote-email"
+                  class="block text-sm font-medium text-zinc-300 mb-2"
+                  >Email Address</label
+                >
+                <input
+                  type="email"
+                  id="quote-email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30"
+                  placeholder="you@example.com"
+                />
+              </div>
+              <div>
+                <label
+                  for="quote-phone"
+                  class="block text-sm font-medium text-zinc-300 mb-2"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="quote-phone"
+                  name="phone"
+                  autocomplete="tel"
+                  class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30"
+                  placeholder="Optional but recommended"
+                />
+              </div>
+              <div>
+                <label
+                  for="quote-industry"
+                  class="block text-sm font-medium text-zinc-300 mb-2"
+                  >Business Type / Industry</label
+                >
+                <input
+                  type="text"
+                  id="quote-industry"
+                  name="industry"
+                  class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30"
+                  placeholder="e.g. Restaurant, Retail, Healthcare"
+                />
+              </div>
+              <div>
+                <label
+                  for="quote-setup"
+                  class="block text-sm font-medium text-zinc-300 mb-2"
+                  >Current Technology Setup</label
+                >
+                <textarea
+                  id="quote-setup"
+                  name="current_setup"
+                  rows="4"
+                  class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30 resize-y min-h-[120px]"
+                  placeholder='e.g. "5 laptops, Wi-Fi with firewall, Office 365, Slack, no automation yet."'
+                ></textarea>
+                <p class="text-zinc-500 text-xs mt-1">
+                  Include hardware, software, tools, apps, network setup, or any
+                  other relevant info.
+                </p>
+              </div>
+              <fieldset>
+                <legend class="block text-sm font-medium text-zinc-300 mb-2">
+                  Type of Service Needed
+                </legend>
+                <div class="space-y-2">
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name="service_new_setup"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    New Business Setup
+                  </label>
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name="service_upgrade"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    Upgrade / Refresh Existing Setup
+                  </label>
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name="service_network"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    Network / Hardware Setup
+                  </label>
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name="service_cloud"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    Cloud Tools / Email Setup
+                  </label>
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name="service_automation"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    Workflow Automation / AI Integration
+                  </label>
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name="service_security"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    Security / Access Management
+                  </label>
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name="service_physical"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    Physical Security (Cameras, Sensors, Access Control)
+                  </label>
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      name="service_unsure"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    I'm unsure — want to know how you could help
+                  </label>
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="checkbox"
+                      id="quote-service-other-cb"
+                      name="service_other"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    Other (please specify)
+                  </label>
+                  <input
+                    id="quote-other-service-input"
+                    type="text"
+                    name="other_service"
+                    placeholder="Please specify"
+                    class="hidden mt-2 w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30"
+                  />
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend class="block text-sm font-medium text-zinc-300 mb-2">
+                  Preferred Contact Method
+                </legend>
+                <div class="space-y-2">
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="radio"
+                      name="preferred_contact"
+                      value="email"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    Email
+                  </label>
+                  <label
+                    class="flex items-center gap-3 text-sm text-zinc-300 cursor-pointer"
+                  >
+                    <input
+                      type="radio"
+                      name="preferred_contact"
+                      value="phone"
+                      class="accent-cyan-500 w-4 h-4"
+                    />
+                    Phone
+                  </label>
+                </div>
+              </fieldset>
+              <div>
+                <label
+                  for="quote-comments"
+                  class="block text-sm font-medium text-zinc-300 mb-2"
+                  >Additional Comments</label
+                >
+                <textarea
+                  id="quote-comments"
+                  name="comments"
+                  rows="4"
+                  class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30 resize-y min-h-[120px]"
+                  placeholder="Any questions, challenges, or special requests"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full rounded-lg bg-cyan-600/90 px-4 py-3 text-sm font-semibold text-white shadow-md shadow-black/20 transition-all duration-200 hover:bg-cyan-500 hover:shadow-lg hover:shadow-cyan-900/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-elevated"
+              >
+                Request a Free Quote
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+
+      <footer class="border-t border-border/60 py-8 mt-auto relative z-10">
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-zinc-500"
+        >
+          <span>© 2026 Akarsh Singh</span>
+          <div class="flex items-center gap-4">
+            <a
+              href="https://www.linkedin.com/in/asinghnc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-cyan-400 transition-colors"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/asingh713"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-cyan-400 transition-colors"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document
+        .getElementById("quote-service-other-cb")
+        .addEventListener("change", function () {
+          document
+            .getElementById("quote-other-service-input")
+            .classList.toggle("hidden", !this.checked);
+        });
+    </script>
+    <script>
+      const navToggle = document.getElementById("nav-toggle");
+      const navMobile = document.getElementById("nav-mobile");
+      const navIconOpen = document.getElementById("nav-icon-open");
+      const navIconClose = document.getElementById("nav-icon-close");
+      navToggle.addEventListener("click", function () {
+        const isOpen = !navMobile.classList.contains("hidden");
+        navMobile.classList.toggle("hidden", isOpen);
+        navIconOpen.classList.toggle("hidden", !isOpen);
+        navIconClose.classList.toggle("hidden", isOpen);
+        navToggle.setAttribute("aria-expanded", String(!isOpen));
+      });
+    </script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>

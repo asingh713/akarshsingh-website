@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Akarsh Singh — Cybersecurity professional focused on cloud security, endpoint security, vendor risk, and compliance."
+    />
+    <title>Akarsh Singh — Cybersecurity Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+            },
+            colors: {
+              surface: "#090b0f",
+              elevated: "#0f1318",
+              card: "#141920",
+              border: "#1e2a35",
+              accent: "#22d3ee",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  </head>
+  <body
+    class="min-h-dvh text-zinc-200 antialiased font-sans"
+    style="background: radial-gradient(ellipse at 20% 0%, #0d1f2d 0%, #090b0f 60%)"
+  >
+    <div
+      class="pointer-events-none fixed inset-0 z-0 opacity-[0.03]"
+      style="background-image: url('https://www.transparenttextures.com/patterns/noise.png')"
+    ></div>
+    <div class="relative z-10 flex flex-col min-h-dvh">
+      <header
+        class="sticky top-0 z-50 border-b border-border/60 bg-surface/80 backdrop-blur-md"
+      >
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between"
+        >
+          <a href="index.html" class="flex items-center gap-2 group">
+            <div
+              class="w-7 h-7 rounded-md bg-cyan-500/20 border border-cyan-500/30 flex items-center justify-center group-hover:bg-cyan-500/30 transition-colors"
+            >
+              <i data-lucide="shield" class="w-3.5 h-3.5 text-cyan-400"></i>
+            </div>
+            <span class="text-sm font-bold text-white tracking-tight"
+              >Akarsh Singh</span
+            >
+          </a>
+
+          <button
+            id="nav-toggle"
+            class="md:hidden p-2 rounded-md text-zinc-400 hover:text-white hover:bg-white/5 transition-colors grid place-items-center"
+            aria-label="Toggle menu"
+            aria-expanded="false"
+          >
+            <span id="nav-icon-open" class="col-start-1 row-start-1 inline-flex"
+              ><i data-lucide="menu" class="w-5 h-5"></i
+            ></span>
+            <span
+              id="nav-icon-close"
+              class="hidden col-start-1 row-start-1 inline-flex"
+              ><i data-lucide="x" class="w-5 h-5"></i
+            ></span>
+          </button>
+
+          <nav class="hidden md:flex items-center gap-1" aria-label="Primary">
+            <a
+              href="index.html"
+              class="px-3 py-1.5 rounded-md text-sm font-medium transition-colors text-white bg-white/8"
+              >Home</a
+            >
+            <a
+              href="services.html"
+              class="px-3 py-1.5 rounded-md text-sm font-medium transition-colors text-zinc-400 hover:text-white hover:bg-white/5"
+              >Consulting &amp; Services</a
+            >
+          </nav>
+        </div>
+
+        <div
+          id="nav-mobile"
+          class="hidden md:hidden border-t border-border/60 bg-surface/95 px-4 py-3 space-y-1"
+        >
+          <a
+            href="index.html"
+            class="block px-3 py-2 rounded-md text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 transition-colors"
+            >Home</a
+          >
+          <a
+            href="services.html"
+            class="block px-3 py-2 rounded-md text-sm font-medium text-zinc-300 hover:text-white hover:bg-white/5 transition-colors"
+            >Consulting &amp; Services</a
+          >
+        </div>
+      </header>
+
+      <section
+        class="max-w-5xl mx-auto px-4 sm:px-6 pt-12 pb-8 md:pt-16 md:pb-10"
+      >
+        <div
+          class="flex flex-col md:flex-row md:items-end md:justify-between gap-4"
+        >
+          <div class="space-y-3">
+            <div
+              class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-medium"
+            >
+              <i data-lucide="map-pin" class="w-3 h-3"></i>
+              Raleigh-Durham, NC
+            </div>
+            <h1
+              class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight leading-tight"
+            >
+              Cybersecurity &amp;<br class="hidden sm:block" /> Tech Consulting
+            </h1>
+            <p class="text-zinc-400 text-sm max-w-md leading-relaxed">
+              Helping people and small businesses stay secure, efficient, and
+              ahead of the curve.
+            </p>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-zinc-400 text-xs font-medium"
+            >
+              <i data-lucide="badge-check" class="w-3 h-3 text-cyan-400"></i>
+              CompTIA Sec+
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-zinc-400 text-xs font-medium"
+            >
+              <i data-lucide="badge-check" class="w-3 h-3 text-cyan-400"></i>
+              CCSK
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-zinc-400 text-xs font-medium"
+            >
+              <i data-lucide="badge-check" class="w-3 h-3 text-cyan-400"></i>
+              ITIL 4
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-zinc-400 text-xs font-medium"
+            >
+              <i data-lucide="badge-check" class="w-3 h-3 text-cyan-400"></i>
+              Jamf Certified
+            </span>
+            <span
+              class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-border bg-card text-zinc-400 text-xs font-medium"
+            >
+              <i data-lucide="badge-check" class="w-3 h-3 text-cyan-400"></i>
+              ACMT
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex-1 w-full max-w-5xl mx-auto px-4 sm:px-6 py-10 md:py-14">
+        <div class="grid grid-cols-1 lg:grid-cols-10 gap-8 lg:gap-10 items-start">
+          <main class="lg:col-span-7 space-y-6">
+            <section
+              aria-labelledby="about-heading"
+              class="rounded-xl border border-border bg-card shadow-xl shadow-black/40 p-6 sm:p-8 hover:border-border/80 transition-colors duration-300"
+            >
+              <h2
+                id="about-heading"
+                class="text-lg font-semibold text-white mb-4 tracking-tight flex items-center"
+              >
+                <i
+                  data-lucide="user"
+                  class="w-4 h-4 text-cyan-400 mr-2 inline-block"
+                ></i>
+                About Me
+              </h2>
+              <div class="space-y-4 max-w-prose">
+                <p
+                  class="text-zinc-300 leading-relaxed text-[0.9375rem] sm:text-base"
+                >
+                  I'm Akarsh, a cybersecurity and technology professional based
+                  in Raleigh-Durham. I started my career hands-on at Apple,
+                  working directly with devices and systems, and over the years
+                  I've grown my skillset to include IT administration and
+                  cybersecurity. I enjoy solving problems and making technology
+                  work for people, whether that's securing a network, automating a
+                  workflow, or helping a business get set up efficiently.
+                </p>
+                <p
+                  class="text-zinc-300 leading-relaxed text-[0.9375rem] sm:text-base"
+                >
+                  Outside of work, I'm a big sports fan, love cooking, and enjoy
+                  exploring the Triangle's dining scene. I love sharing a good
+                  meal with friends, trying new recipes at home, and getting
+                  outside to enjoy the beautiful nature here. I'm motivated by
+                  creating solutions that make life easier and showing people that
+                  technology isn't scary or a burden — it's a tool that can help
+                  make life safer, smoother, and more efficient.
+                </p>
+              </div>
+              <div
+                class="mt-6 pt-5 border-t border-border grid grid-cols-3 gap-4 text-center"
+              >
+                <div>
+                  <p class="text-xl font-bold text-white">4+</p>
+                  <p class="text-xs text-zinc-500 mt-0.5">Years in Security</p>
+                </div>
+                <div>
+                  <p class="text-xl font-bold text-white">5</p>
+                  <p class="text-xs text-zinc-500 mt-0.5">Certifications</p>
+                </div>
+                <div>
+                  <p class="text-xl font-bold text-white">99%</p>
+                  <p class="text-xs text-zinc-500 mt-0.5">
+                    Endpoint Vuln Reduction
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section
+              aria-labelledby="experience-heading"
+              class="rounded-xl border border-border bg-card shadow-xl shadow-black/40 p-6 sm:p-8 hover:border-border/80 transition-colors duration-300"
+            >
+              <h2
+                id="experience-heading"
+                class="text-lg font-semibold text-white mb-4 tracking-tight flex items-center"
+              >
+                <i
+                  data-lucide="briefcase"
+                  class="w-4 h-4 text-cyan-400 mr-2 inline-block"
+                ></i>
+                Professional Experience
+              </h2>
+              <div class="space-y-4 max-w-prose">
+                <p
+                  class="text-zinc-300 leading-relaxed text-[0.9375rem] sm:text-base"
+                >
+                  I've built a broad foundation across IT, hardware, and
+                  cybersecurity. I've designed and maintained networks, installed
+                  routers, switches, Wi-Fi systems, and firewalls, and implemented
+                  secure and reliable hardware and software solutions across offices
+                  and cloud environments. I work with desktops, laptops, mobile
+                  devices, cloud tools, email systems, and collaboration platforms,
+                  and I help businesses streamline workflows, integrate AI tools
+                  where they make sense, and improve overall efficiency.
+                </p>
+                <p
+                  class="text-zinc-300 leading-relaxed text-[0.9375rem] sm:text-base"
+                >
+                  I also assist with physical security, including cameras,
+                  sensors, and access control systems. My combination of IT,
+                  cybersecurity, and hands-on hardware experience allows me to
+                  provide solutions that are practical, effective, and tailored to
+                  each business's size and needs.
+                </p>
+              </div>
+              <div class="flex flex-wrap gap-2 mt-5">
+                <span
+                  class="inline-flex px-3 py-1 rounded-full bg-surface border border-border text-xs text-zinc-400 items-center gap-1.5"
+                >
+                  <i data-lucide="shield" class="w-3 h-3 text-cyan-400"></i>
+                  EDR &amp; SIEM
+                </span>
+                <span
+                  class="inline-flex px-3 py-1 rounded-full bg-surface border border-border text-xs text-zinc-400 items-center gap-1.5"
+                >
+                  <i data-lucide="cloud" class="w-3 h-3 text-cyan-400"></i>
+                  Cloud Security
+                </span>
+                <span
+                  class="inline-flex px-3 py-1 rounded-full bg-surface border border-border text-xs text-zinc-400 items-center gap-1.5"
+                >
+                  <i data-lucide="wifi" class="w-3 h-3 text-cyan-400"></i>
+                  Network Security
+                </span>
+                <span
+                  class="inline-flex px-3 py-1 rounded-full bg-surface border border-border text-xs text-zinc-400 items-center gap-1.5"
+                >
+                  <i data-lucide="monitor" class="w-3 h-3 text-cyan-400"></i>
+                  Endpoint Management
+                </span>
+                <span
+                  class="inline-flex px-3 py-1 rounded-full bg-surface border border-border text-xs text-zinc-400 items-center gap-1.5"
+                >
+                  <i
+                    data-lucide="alert-triangle"
+                    class="w-3 h-3 text-cyan-400"
+                  ></i>
+                  Incident Response
+                </span>
+                <span
+                  class="inline-flex px-3 py-1 rounded-full bg-surface border border-border text-xs text-zinc-400 items-center gap-1.5"
+                >
+                  <i data-lucide="file-check" class="w-3 h-3 text-cyan-400"></i>
+                  Compliance
+                </span>
+                <span
+                  class="inline-flex px-3 py-1 rounded-full bg-surface border border-border text-xs text-zinc-400 items-center gap-1.5"
+                >
+                  <i data-lucide="bot" class="w-3 h-3 text-cyan-400"></i>
+                  AI Governance
+                </span>
+                <span
+                  class="inline-flex px-3 py-1 rounded-full bg-surface border border-border text-xs text-zinc-400 items-center gap-1.5"
+                >
+                  <i data-lucide="building" class="w-3 h-3 text-cyan-400"></i>
+                  Vendor Risk
+                </span>
+              </div>
+            </section>
+
+            <section
+              aria-labelledby="smb-heading"
+              class="rounded-xl border border-border bg-card shadow-xl shadow-black/40 p-6 sm:p-8 hover:border-border/80 transition-colors duration-300"
+            >
+              <h2
+                id="smb-heading"
+                class="text-lg font-semibold text-white mb-4 tracking-tight flex items-center"
+              >
+                <i
+                  data-lucide="store"
+                  class="w-4 h-4 text-cyan-400 mr-2 inline-block"
+                ></i>
+                Small Business Tech Consulting
+              </h2>
+              <div class="space-y-4 max-w-prose">
+                <p
+                  class="text-zinc-300 leading-relaxed text-[0.9375rem] sm:text-base"
+                >
+                  Running a small business is hard work, and technology shouldn't
+                  make it any harder. I help small businesses get set up,
+                  organized, and running efficiently so owners and teams can focus
+                  on what they do best, rather than spending time troubleshooting.
+                </p>
+                <p
+                  class="text-zinc-300 leading-relaxed text-[0.9375rem] sm:text-base"
+                >
+                  I have a personal connection to small businesses. Growing up as
+                  a child of immigrants who owned and ran their own business, I
+                  witnessed firsthand the hard work and passion people pour into
+                  their dreams. Technology shouldn't be a roadblock in those
+                  dreams. That experience shaped why I do this work today:
+                  helping local businesses use technology in practical, affordable,
+                  and effective ways to make their operations simpler, more secure,
+                  and more efficient.
+                </p>
+                <p
+                  class="text-zinc-300 leading-relaxed text-[0.9375rem] sm:text-base"
+                >
+                  I work across all aspects of small business tech: setting up
+                  hardware and software, installing networking hardware and
+                  configuring networks, configuring mobile devices, and implementing
+                  cloud tools and email systems. I can help with workflow
+                  automation, integrate AI tools where they make sense, and assist
+                  with physical security like cameras, sensors, and access
+                  controls. My goal is to provide solutions that actually work for
+                  your team — nothing overly complicated, nothing unnecessary —
+                  just the right tools to help your business succeed. Whether
+                  you're starting from scratch, inheriting a messy setup, or just
+                  looking to improve how your business runs, I can help you build a
+                  setup that works today and scales for tomorrow.
+                </p>
+              </div>
+              <a
+                href="services.html"
+                class="inline-flex items-center justify-center w-full rounded-lg bg-cyan-600/90 px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-black/20 transition-all duration-200 hover:bg-cyan-500 hover:shadow-lg hover:shadow-cyan-900/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface mt-6"
+              >
+                View Tech Services →
+              </a>
+            </section>
+
+            <section
+              aria-labelledby="connect-heading"
+              class="rounded-xl border border-border bg-card shadow-xl shadow-black/40 p-6 sm:p-8 hover:border-border/80 transition-colors duration-300"
+            >
+              <h2
+                id="connect-heading"
+                class="text-lg font-semibold text-white mb-4 tracking-tight flex items-center"
+              >
+                <i
+                  data-lucide="mail"
+                  class="w-4 h-4 text-cyan-400 mr-2 inline-block"
+                ></i>
+                Connect
+              </h2>
+              <p class="text-zinc-400 text-sm mb-6">
+                Feel free to reach out — whether it's for opportunities, projects,
+                volunteering, or just to chat (or grab a coffee!).
+              </p>
+              <form
+                action="https://formspree.io/f/mjgpebkg"
+                method="POST"
+                class="space-y-5"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="Personal Contact — akarshsingh.com"
+                />
+                <div>
+                  <label
+                    for="contact-name"
+                    class="block text-sm font-medium text-zinc-300 mb-2"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    required
+                    autocomplete="name"
+                    class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="contact-email"
+                    class="block text-sm font-medium text-zinc-300 mb-2"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30"
+                    placeholder="you@example.com"
+                  />
+                </div>
+                <div>
+                  <label
+                    for="contact-message"
+                    class="block text-sm font-medium text-zinc-300 mb-2"
+                    >Message</label
+                  >
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    required
+                    rows="4"
+                    class="w-full rounded-lg border border-border bg-surface/80 px-4 py-3 text-zinc-100 placeholder:text-zinc-600 shadow-inner shadow-black/20 transition-colors duration-200 focus:border-cyan-500/60 focus:outline-none focus:ring-2 focus:ring-cyan-500/30 resize-y min-h-[120px]"
+                    placeholder="How can I help?"
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="w-full rounded-lg bg-cyan-600/90 px-4 py-3 text-sm font-semibold text-white shadow-md shadow-black/20 transition-all duration-200 hover:bg-cyan-500 hover:shadow-lg hover:shadow-cyan-900/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-elevated"
+                >
+                  Send Message →
+                </button>
+              </form>
+            </section>
+          </main>
+
+          <aside class="lg:col-span-3 space-y-4" aria-label="Links and contact">
+            <a
+              href="https://www.linkedin.com/in/asinghnc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group block rounded-xl border border-border bg-card p-5 shadow-xl shadow-black/40 transition-all duration-200 hover:border-cyan-500/40 hover:border-border/80 hover:shadow-lg hover:shadow-cyan-950/30 hover:-translate-y-0.5"
+            >
+              <h3
+                class="text-sm font-semibold text-cyan-400 mb-2 group-hover:text-cyan-300 transition-colors flex items-center"
+              >
+                <i
+                  data-lucide="linkedin"
+                  class="w-4 h-4 text-cyan-400 mr-1.5 inline-block"
+                ></i>
+                LinkedIn
+              </h3>
+              <p
+                class="text-sm text-zinc-400 leading-snug group-hover:text-zinc-300 transition-colors"
+              >
+                Let's connect on LinkedIn
+              </p>
+            </a>
+
+            <a
+              href="https://github.com/asingh713"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="group block rounded-xl border border-border bg-card p-5 shadow-xl shadow-black/40 transition-all duration-200 hover:border-cyan-500/40 hover:border-border/80 hover:shadow-lg hover:shadow-cyan-950/30 hover:-translate-y-0.5"
+            >
+              <h3
+                class="text-sm font-semibold text-cyan-400 mb-2 group-hover:text-cyan-300 transition-colors flex items-center"
+              >
+                <i
+                  data-lucide="github"
+                  class="w-4 h-4 text-cyan-400 mr-1.5 inline-block"
+                ></i>
+                GitHub
+              </h3>
+              <p
+                class="text-sm text-zinc-400 leading-snug group-hover:text-zinc-300 transition-colors"
+              >
+                Check out my projects on GitHub
+              </p>
+            </a>
+
+            <div
+              class="rounded-xl border border-border bg-card p-5 shadow-xl shadow-black/40 transition-all duration-200 hover:border-cyan-500/40 hover:border-border/80 hover:shadow-lg hover:shadow-cyan-950/30"
+            >
+              <h3
+                class="text-sm font-semibold text-cyan-400 mb-2 flex items-center"
+              >
+                <i
+                  data-lucide="wrench"
+                  class="w-4 h-4 text-cyan-400 mr-1.5 inline-block"
+                ></i>
+                Small Business Services
+              </h3>
+              <p class="text-sm text-zinc-400 leading-snug mb-4">
+                Need tech help for your business? Let's talk.
+              </p>
+              <a
+                href="services.html"
+                class="inline-flex items-center justify-center w-full rounded-lg bg-cyan-600/90 px-4 py-2.5 text-sm font-semibold text-white shadow-md shadow-black/20 transition-all duration-200 hover:bg-cyan-500 hover:shadow-lg hover:shadow-cyan-900/40 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400 focus-visible:ring-offset-2 focus-visible:ring-offset-surface"
+              >
+                View Services →
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <footer class="border-t border-border/60 py-8 mt-auto relative z-10">
+        <div
+          class="max-w-5xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-zinc-500"
+        >
+          <span>© 2026 Akarsh Singh</span>
+          <div class="flex items-center gap-4">
+            <a
+              href="https://www.linkedin.com/in/asinghnc/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-cyan-400 transition-colors"
+              >LinkedIn</a
+            >
+            <a
+              href="https://github.com/asingh713"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="hover:text-cyan-400 transition-colors"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      const navToggle = document.getElementById("nav-toggle");
+      const navMobile = document.getElementById("nav-mobile");
+      const navIconOpen = document.getElementById("nav-icon-open");
+      const navIconClose = document.getElementById("nav-icon-close");
+      navToggle.addEventListener("click", function () {
+        const isOpen = !navMobile.classList.contains("hidden");
+        navMobile.classList.toggle("hidden", isOpen);
+        navIconOpen.classList.toggle("hidden", !isOpen);
+        navIconClose.classList.toggle("hidden", isOpen);
+        navToggle.setAttribute("aria-expanded", String(!isOpen));
+      });
+    </script>
+    <script>
+      lucide.createIcons();
+    </script>
+  </body>
+</html>
