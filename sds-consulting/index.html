@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SD Solutions NC — Technology Consulting</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
+          },
+          colors: {
+            surface:  "#0e0c0a",
+            elevated: "#141210",
+            card:     "#1a1714",
+            border:   "#2a2420",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body
+  class="min-h-dvh bg-surface text-zinc-300 antialiased font-sans flex flex-col"
+  style="background-color: #0e0c0a; background-image: radial-gradient(ellipse at 0% 0%, #1a1208 0%, #0e0c0a 60%), radial-gradient(ellipse at 100% 100%, #120d0a 0%, transparent 60%);">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur-md">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+      <span class="text-sm font-bold text-zinc-100 tracking-tight">SD Solutions NC</span>
+      <a href="/contact"
+        class="inline-flex items-center gap-2 px-4 py-1.5 rounded-lg bg-amber-700 hover:bg-amber-600 text-white text-xs font-semibold transition-all duration-200">
+        Get in Touch
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="max-w-4xl mx-auto px-4 sm:px-6 pt-20 pb-16">
+    <div class="max-w-xl">
+      <p class="text-xs font-semibold text-amber-500/80 uppercase tracking-[0.2em] mb-5">
+        Raleigh-Durham, NC
+      </p>
+      <h1 class="text-5xl sm:text-6xl font-extrabold text-zinc-50 tracking-tight leading-[1.05] mb-6">
+        Technology that works for your business.
+      </h1>
+      <p class="text-base text-zinc-400 leading-relaxed mb-8">
+        SD Solutions NC helps small businesses get their technology set up, configured, and running the way it should — so you can focus on what you do best.
+      </p>
+      <a href="/contact"
+        class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-amber-700 hover:bg-amber-600 text-white text-sm font-semibold shadow-lg shadow-amber-900/30 transition-all duration-200">
+        Book a Free Consultation
+      </a>
+    </div>
+  </section>
+
+  <main class="max-w-4xl mx-auto px-4 sm:px-6 pb-16 flex-1 w-full">
+
+    <!-- What I do -->
+    <section class="mb-14">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="h-px flex-1" style="background: linear-gradient(90deg, transparent, #2a2420)"></div>
+        <span class="text-[10px] font-semibold text-zinc-600 uppercase tracking-[0.2em]">Services</span>
+        <div class="h-px flex-1" style="background: linear-gradient(90deg, #2a2420, transparent)"></div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+        <div class="rounded-xl border border-border bg-card p-6">
+          <h3 class="text-sm font-bold text-zinc-100 mb-2">Setup & Installation</h3>
+          <p class="text-xs text-zinc-500 leading-relaxed">
+            From networking and devices to point-of-sale and beyond — I get everything installed, configured, and working together before day one.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-border bg-card p-6">
+          <h3 class="text-sm font-bold text-zinc-100 mb-2">Staff Training</h3>
+          <p class="text-xs text-zinc-500 leading-relaxed">
+            New technology is only valuable when your team knows how to use it. I train your staff in plain terms and stay until the questions run out.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-border bg-card p-6">
+          <h3 class="text-sm font-bold text-zinc-100 mb-2">AI & Workflow Optimization</h3>
+          <p class="text-xs text-zinc-500 leading-relaxed">
+            I identify where smart tools can save your team real time and get them implemented in a way that actually fits how your business runs.
+          </p>
+        </div>
+
+        <div class="rounded-xl border border-border bg-card p-6">
+          <h3 class="text-sm font-bold text-zinc-100 mb-2">Ongoing Support</h3>
+          <p class="text-xs text-zinc-500 leading-relaxed">
+            When something breaks or changes, I'm available. No ticket systems, no runaround — just straightforward help from someone who knows your setup.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="rounded-xl border border-amber-800/30 p-8 sm:p-10 text-center"
+      style="background: linear-gradient(135deg, #1a1208 0%, #141210 100%)">
+      <h2 class="text-2xl sm:text-3xl font-extrabold text-zinc-50 mb-3">Not sure if this is a fit?</h2>
+      <p class="text-zinc-400 text-sm leading-relaxed mb-6 max-w-sm mx-auto">
+        Reach out anyway. The first conversation is free and there's no obligation — I'll let you know if and how I can help.
+      </p>
+      <a href="/contact"
+        class="inline-flex items-center gap-2 px-8 py-3 rounded-lg bg-amber-700 hover:bg-amber-600 text-white text-sm font-semibold shadow-lg shadow-amber-900/30 transition-all duration-200">
+        Get in Touch
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="py-8 mt-auto text-center border-t border-border">
+    <p class="text-xs text-zinc-700">SD Solutions NC · Raleigh-Durham, NC</p>
+    <a href="/" class="text-[10px] text-zinc-800 hover:text-zinc-600 transition-colors mt-1 inline-block">akarshsingh.com</a>
+  </footer>
+
+</body>
+</html>
