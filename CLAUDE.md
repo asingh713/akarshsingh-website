@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 A personal static HTML website hosted on GitHub Pages at **akarshsingh.com**. No build step, no framework, no package manager — files are served as-is. Deployment is automatic on push to `main` (live within ~2 minutes).
 
-- **Git remote:** `git@github.com:asingh713/akarshsingh-website.git`
+- **Git remote:** `https://github.com/asingh713/akarshsingh-website.git` (HTTPS — SSH keys not configured)
 - **Branch:** `main` (GitHub Pages serves from this branch)
 - **Custom domain:** Configured via `CNAME` file — do not modify it
 
@@ -19,7 +19,7 @@ git push
 # If rejected: git pull --rebase && git push
 ```
 
-GitHub enforces branch protection but direct pushes to `main` work.
+GitHub enforces branch protection but direct pushes to `main` work. Committer name warnings about auto-configured identity are cosmetic only.
 
 ## Site Structure
 
@@ -36,7 +36,7 @@ Each route is a directory with an `index.html` inside it, so `akarshsingh.com/fo
 
 ## Design System
 
-All pages share the exact same stack and tokens — do not deviate.
+**All pages must use the same tokens and color scheme.** Do not introduce per-page custom palettes.
 
 **Stack:** Tailwind CSS via CDN (`https://cdn.tailwindcss.com`) + Plus Jakarta Sans from Google Fonts (weights 400, 500, 600, 700, 800). No other dependencies.
 
@@ -63,6 +63,7 @@ Sticky header:
 Primary button: `bg-amber-600 hover:bg-amber-500 text-white`
 Secondary/ghost button: `border border-border bg-card hover:border-amber-400`
 Accent text/labels: `text-amber-600`
+Links: `text-amber-600 hover:text-amber-500 underline underline-offset-2`
 Card container: `rounded-xl border border-border bg-card`
 
 Footer:
@@ -75,9 +76,12 @@ Footer:
 
 **Privacy pages** (`/worky/privacy`, `/peony/privacy`):
 - Header left: **"SD Solutions NC"** (links to `https://akarshsingh.com`) — not "Akarsh Singh"
-- Worky uses one continuous prose block inside a single card. Peony uses numbered sections with `<div class="h-px bg-border">` dividers inside a single card.
+- Worky uses one continuous prose block inside a single card
+- Peony uses numbered sections (1–10) with `<div class="h-px bg-border">` dividers inside a single card
 - Footer: `"2026 Akarsh Singh, SD Solutions NC · [App Name]"`
 - These URLs are submitted to App Store Connect — do not change the paths
+  - Worky: `https://akarshsingh.com/worky/privacy`
+  - Peony: `https://akarshsingh.com/peony/privacy`
 
 **Contact form** (`/contact`):
 - Formspree endpoint: `https://formspree.io/f/mjgpebkg` — do not change without confirming
@@ -89,6 +93,7 @@ Footer:
 
 - **No copyright symbol** — user preference
 - **No emoji** in any page content
-- **No dark theme** — was deliberately removed
+- **No dark theme** — was deliberately removed, do not revert
+- **No per-page custom color palettes** — all pages share the amber/zinc/warm-surface theme
 - **Tailwind via CDN only** — no npm, no PostCSS, no build pipeline
-- When adding a new app's privacy policy, use `/<appname>/privacy/index.html` and publish under "SD Solutions NC" branding
+- When adding a new app's privacy policy, use `/<appname>/privacy/index.html`, publish under "SD Solutions NC" branding, and add it to the sitemap

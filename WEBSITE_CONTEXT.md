@@ -1,5 +1,5 @@
 # Website Project Context
-**Last updated:** April 2026
+**Last updated:** May 2026
 **Repo:** github.com/asingh713/akarshsingh-website
 **Live site:** https://akarshsingh.com
 **Hosting:** GitHub Pages (custom domain via CNAME file)
@@ -19,9 +19,13 @@ website/
 ├── worky/
 │   └── privacy/
 │       └── index.html            → akarshsingh.com/worky/privacy (Worky v3 privacy policy)
+├── peony/
+│   └── privacy/
+│       └── index.html            → akarshsingh.com/peony/privacy (Peony privacy policy)
 ├── sds-consulting/
 │   └── index.html                → akarshsingh.com/sds-consulting (SD Solutions NC landing page)
 ├── CNAME                         → akarshsingh.com (custom domain config)
+├── CLAUDE.md
 ├── README.md
 └── WEBSITE_CONTEXT.md            (this file)
 ```
@@ -106,7 +110,7 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
 - Header left: "Akarsh Singh" (links to `/`), right: Back arrow
 
 ### `/sitemap` — Sitemap
-- Three sections: Pages (Home, Contact, Sitemap), Apps (Worky v3 Privacy Policy), Elsewhere (LinkedIn, GitHub)
+- Three sections: Pages (Home, Contact, Sitemap), Apps (Worky v3 Privacy Policy, Peony Privacy Policy), Elsewhere (LinkedIn, GitHub)
 - Each row: page name left, full URL right, amber hover on both
 - Header left: "Akarsh Singh", right: Back arrow
 
@@ -126,6 +130,23 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
   - Data deletion: Settings → Sign Out removes all data
   - Not directed at children under 13
   - Changes posted at this URL with updated date
+
+### `/peony/privacy` — Peony Privacy Policy
+- App full name: **Peony — A Simple Period Tracker**
+- Written as **numbered sections** (1–10) with `<div class="h-px bg-border">` dividers inside a single card
+- All content in a single `rounded-xl border border-border bg-card` container
+- Branding: **Peony**, creator: **Akarsh Singh, SD Solutions NC**
+- Header left: **"SD Solutions NC"** (links to akarshsingh.com), right: "Peony — Privacy Policy"
+- Footer: "2026 Akarsh Singh, SD Solutions NC · Peony"
+- Required by App Store Connect — URL to submit: `https://akarshsingh.com/peony/privacy`
+- **Privacy policy covers:**
+  - Data stored locally via SwiftData; iCloud sync via CloudKit (private, end-to-end)
+  - Apple Health / HealthKit integration (permissions-based, no external storage)
+  - No tracking, no IDFA, no analytics SDKs, no third-party data sharing
+  - Medical disclaimer: not a medical device, predictions are estimates only, not for contraception
+  - Liability limitation clause
+  - Data deletion via in-app Settings or deleting the app
+  - Not directed at children under 13
 
 ### `/sds-consulting` — SD Solutions NC Consulting Page
 - **NOT in the sitemap** (intentional — not officially launched yet)
@@ -150,23 +171,25 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
 - **No copyright symbol** — user preference, do not add `©`
 - **No emoji** in any page content
 - **Formspree endpoint:** `https://formspree.io/f/mjgpebkg` — do not change without confirming with user
-- **Privacy page header says "SD Solutions NC"** — not "Akarsh Singh" — because Worky v3 is published under SD Solutions NC
+- **Privacy page headers say "SD Solutions NC"** — not "Akarsh Singh" — both Worky v3 and Peony are published under SD Solutions NC
 - **Consulting page is intentionally vague** — prior versions were too specific about pain points and industries, which the user felt would deter people who didn't match exactly. Keep copy high-level and encouraging.
 - **sds-consulting is NOT in the sitemap** — keep it this way until user decides it's ready to promote
 - **Dark theme was deliberately removed** — user found it "depressing." Do not revert to dark.
 - **Light theme CTA section** on consulting page uses `bg-amber-50 border border-amber-200` instead of a dark gradient
+- **All pages use the same amber/zinc/warm-surface theme** — do not introduce per-page custom color palettes
 
 ---
 
 ## Deployment Notes
 
-- **Git remote:** `git@github.com:asingh713/akarshsingh-website.git`
+- **Git remote:** `https://github.com/asingh713/akarshsingh-website.git` (HTTPS — SSH keys not configured on this machine)
 - **Branch:** `main` (GitHub Pages serves from this branch)
 - **Workflow:** Edit files → `git add` → `git commit` → `git push`
 - **Custom domain:** Configured via `CNAME` file containing `akarshsingh.com`
 - **DNS:** Managed externally — do not touch CNAME file
 - If push is rejected (remote ahead), run: `git pull --rebase && git push`
 - GitHub enforces branch protection ("Changes must be made through a pull request") but it is bypassed — pushes to main work directly.
+- Git identity auto-configured from hostname (`akarshsingh@Mac.lan`) — committer name warnings are cosmetic only
 
 ---
 
@@ -175,11 +198,13 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
 - **Full personal site** — `index.html` is still a "Coming Soon" placeholder. The full personal portfolio/site has not been designed or built yet. This is the main outstanding item for the website.
 - **sds-consulting launch** — once user is ready, add the page to the sitemap and decide if it gets its own domain or stays as a sub-path
 - **Worky v3 App Store privacy policy URL** — already submitted as `https://akarshsingh.com/worky/privacy` in App Store Connect
+- **Peony App Store privacy policy URL** — submit `https://akarshsingh.com/peony/privacy` in App Store Connect
 - **Contact form testing** — verify Formspree endpoint (`mjgpebkg`) is receiving submissions correctly
 
 ---
 
 ## Related Projects
 
-- **Worky v3** — iOS workout tracking app. Context file at `/Users/akarshsingh/Engineering_Tools/Worky_V3/WORKY_CONTEXT.md`. The website hosts the app's required privacy policy at `/worky/privacy`.
+- **Worky v3** — iOS workout tracking app. The website hosts the app's required privacy policy at `/worky/privacy`.
+- **Peony** — iOS period tracking app ("Peony — A Simple Period Tracker"). The website hosts the app's required privacy policy at `/peony/privacy`.
 - **SD Solutions NC** — small business IT consulting. No separate site/domain yet. Currently lives at `akarshsingh.com/sds-consulting`.
