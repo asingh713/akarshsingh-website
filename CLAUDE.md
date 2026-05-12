@@ -31,7 +31,7 @@ Each route is a directory with an `index.html` inside it, so `akarshsingh.com/fo
 | `contact/index.html` | `/contact` — Contact form (Formspree) |
 | `sitemap/index.html` | `/sitemap` |
 | `worky/privacy/index.html` | `/worky/privacy` — Worky v3 App Store privacy policy |
-| `poppy/privacy/index.html` | `/poppy/privacy` — Poppy App Store privacy policy |
+| `peony/privacy/index.html` | `/peony/privacy` — Peony App Store privacy policy |
 | `sds-consulting/index.html` | `/sds-consulting` — SD Solutions NC (not in sitemap, not launched) |
 
 ## Design System
@@ -73,9 +73,9 @@ Footer:
 
 ## Page-Specific Notes
 
-**Privacy pages** (`/worky/privacy`, `/poppy/privacy`):
+**Privacy pages** (`/worky/privacy`, `/peony/privacy`):
 - Header left: **"SD Solutions NC"** (links to `https://akarshsingh.com`) — not "Akarsh Singh"
-- Worky uses one continuous prose block inside a single card. Poppy uses numbered sections with `<div class="h-px bg-border">` dividers inside a single card.
+- Worky uses one continuous prose block inside a single card. Peony uses numbered sections with `<div class="h-px bg-border">` dividers inside a single card.
 - Footer: `"2026 Akarsh Singh, SD Solutions NC · [App Name]"`
 - These URLs are submitted to App Store Connect — do not change the paths
 
