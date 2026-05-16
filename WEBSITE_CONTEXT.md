@@ -11,17 +11,29 @@
 
 ```
 website/
-├── index.html                    → akarshsingh.com/            (Coming Soon homepage)
+├── index.html                    → akarshsingh.com/            (Homepage — hero + about)
 ├── contact/
 │   └── index.html                → akarshsingh.com/contact      (Contact form)
 ├── sitemap/
 │   └── index.html                → akarshsingh.com/sitemap      (Sitemap)
 ├── worky/
+│   ├── index.html                → akarshsingh.com/worky         (Worky v3 app page)
 │   └── privacy/
 │       └── index.html            → akarshsingh.com/worky/privacy (Worky v3 privacy policy)
 ├── peony/
+│   ├── index.html                → akarshsingh.com/peony         (Peony app page)
 │   └── privacy/
-│       └── index.html            → akarshsingh.com/peony/privacy (Peony privacy policy)
+│       └── index.html            → akarshsingh.com/peony/privacy  (Peony privacy policy)
+├── tprm/
+│   └── index.html                → akarshsingh.com/tprm           (TPRM SaaS landing page)
+├── assets/
+│   └── screenshots/              → Static screenshot images
+│       ├── worky-1.png           (Workout Days screen)
+│       ├── worky-2.png           (Dashboard/PRs screen)
+│       ├── worky-3.png           (Exercise detail screen)
+│       ├── peony-1.png           (Today/home screen)
+│       ├── peony-2.png           (Calendar screen)
+│       └── peony-3.png           (Mood picker screen)
 ├── sds-consulting/
 │   └── index.html                → akarshsingh.com/sds-consulting (SD Solutions NC landing page)
 ├── CNAME                         → akarshsingh.com (custom domain config)
@@ -95,11 +107,12 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
 ## Pages — Current State
 
 ### `/` — Homepage (`index.html`)
-- "Coming Soon" page — the main personal site is not built out yet
-- Shows: name, tagline ("Something new is on the way"), three buttons: LinkedIn, GitHub, Contact
-- Footer: minimal — "Akarsh Singh · Raleigh-Durham, NC" + small Sitemap link
-- Header: none (no sticky nav on this page)
-- **Status:** Placeholder. Full personal site to be built at a later date.
+- Professional homepage with hero + about section
+- **Header (sticky):** "Akarsh Singh" (text-base font-extrabold) left, amber "Contact" button right
+- **Hero:** circular photo placeholder + green dot badge (Cybersecurity Engineer · Raleigh-Durham, NC) + H1 headline with amber accent + tagline + cert/tool badges (Security+, CCSK v5, ITIL 4, CrowdStrike · Okta · AWS)
+- **About:** labeled divider + 2-col cards — Background prose + Core Disciplines amber-dot list (9 items)
+- **Footer:** centered "Akarsh Singh · Raleigh-Durham, NC" + small Sitemap link
+- **Photo:** placeholder SVG circle; swap to `<img src="/assets/photo.jpg">` when real photo provided
 
 ### `/contact` — Contact Page
 - Contact form with Name, Email, Message fields
@@ -148,6 +161,31 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
   - Data deletion via in-app Settings or deleting the app
   - Not directed at children under 13
 
+### `/worky` — Worky v3 App Page (NEW)
+- Consumer-focused app marketing page
+- App hero: orange gradient icon, "iOS App · Free" label, App Store CTA (href="#" — update when published)
+- Tagline: "Track your lifts. Beat your records."
+- 3 feature cards: Personal Records, iCloud Sync, Built-in Timer
+- Screenshot strip: worky-1/2/3.png from assets/screenshots/
+- Privacy callout → `/worky/privacy`
+
+### `/peony` — Peony App Page (NEW)
+- Consumer-focused app marketing page
+- App hero: rose/red gradient icon, "iOS App · Free" label, App Store CTA + Privacy ghost button
+- Tagline: "Your cycle. Your data. Always."
+- 3 feature cards: Cycle Calendar, Mood & Symptoms, 100% Private
+- Screenshot strip: peony-1/2/3.png from assets/screenshots/
+- Privacy callout → `/peony/privacy`
+
+### `/tprm` — TPRM SaaS Landing Page (NEW)
+- Business-focused SaaS marketing page
+- App hero: amber/brown shield icon, "SaaS Platform · Live" badge
+- CTAs: "View Platform →" → https://tprm.akarshsingh.com, "Get in Touch" → /contact
+- Tagline: "Vendor risk without the spreadsheet."
+- 3 feature cards: AI-Assisted Research, Automatic Risk Scoring, Integrations & Alerts
+- "Built from real experience" prose card
+- Tech strip: React+Node, PostgreSQL, Role-Based Access, Self-Hosted (DigitalOcean+Docker)
+
 ### `/sds-consulting` — SD Solutions NC Consulting Page
 - **NOT in the sitemap** (intentional — not officially launched yet)
 - Separate business identity: **SD Solutions NC** — small business IT consulting
@@ -195,7 +233,8 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
 
 ## Pending / Future Work
 
-- **Full personal site** — `index.html` is still a "Coming Soon" placeholder. The full personal portfolio/site has not been designed or built yet. This is the main outstanding item for the website.
+- **Real photo** — Replace SVG placeholder on homepage with actual headshot at assets/photo.jpg
+- **App Store links** — Update href="#" on Worky and Peony app pages when published to App Store
 - **sds-consulting launch** — once user is ready, add the page to the sitemap and decide if it gets its own domain or stays as a sub-path
 - **Worky v3 App Store privacy policy URL** — already submitted as `https://akarshsingh.com/worky/privacy` in App Store Connect
 - **Peony App Store privacy policy URL** — submit `https://akarshsingh.com/peony/privacy` in App Store Connect
@@ -207,4 +246,5 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
 
 - **Worky v3** — iOS workout tracking app. The website hosts the app's required privacy policy at `/worky/privacy`.
 - **Peony** — iOS period tracking app ("Peony — A Simple Period Tracker"). The website hosts the app's required privacy policy at `/peony/privacy`.
+- **TPRM** — SaaS third-party risk management platform. Live at https://tprm.akarshsingh.com. Repo: github.com/asingh713/tprm (private). Website landing page at `/tprm`.
 - **SD Solutions NC** — small business IT consulting. No separate site/domain yet. Currently lives at `akarshsingh.com/sds-consulting`.

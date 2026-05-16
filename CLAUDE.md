@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-A personal static HTML website hosted on GitHub Pages at **akarshsingh.com**. No build step, no framework, no package manager — files are served as-is. Deployment is automatic on push to `main` (live within ~2 minutes).
+A personal site and portfolio for Akarsh Singh, Cybersecurity Engineer. Hosted on GitHub Pages at **akarshsingh.com**. No build step, no framework, no package manager — files are served as-is. Deployment is automatic on push to `main` (live within ~2 minutes).
 
 - **Git remote:** `https://github.com/asingh713/akarshsingh-website.git` (HTTPS — SSH keys not configured)
 - **Branch:** `main` (GitHub Pages serves from this branch)
@@ -27,12 +27,16 @@ Each route is a directory with an `index.html` inside it, so `akarshsingh.com/fo
 
 | Path | URL |
 |------|-----|
-| `index.html` | `/` — Coming Soon placeholder |
+| `index.html` | `/` — Homepage (hero + about) |
 | `contact/index.html` | `/contact` — Contact form (Formspree) |
 | `sitemap/index.html` | `/sitemap` |
+| `worky/index.html` | `/worky` — Worky v3 app marketing page |
 | `worky/privacy/index.html` | `/worky/privacy` — Worky v3 App Store privacy policy |
+| `peony/index.html` | `/peony` — Peony app marketing page |
 | `peony/privacy/index.html` | `/peony/privacy` — Peony App Store privacy policy |
+| `tprm/index.html` | `/tprm` — TPRM SaaS landing page |
 | `sds-consulting/index.html` | `/sds-consulting` — SD Solutions NC (not in sitemap, not launched) |
+| `assets/screenshots/` | Static screenshot images for app pages |
 
 ## Design System
 
@@ -83,6 +87,13 @@ Footer:
   - Worky: `https://akarshsingh.com/worky/privacy`
   - Peony: `https://akarshsingh.com/peony/privacy`
 
+**App pages** (`/worky`, `/peony`, `/tprm`):
+- Header: "Akarsh Singh" (text-base font-extrabold) left, back arrow right
+- Consumer-focused: app hero with gradient icon, tagline, 3 feature cards, screenshot strip, privacy/CTA callout
+- App Store links currently placeholder (`href="#"`) — update when apps are published
+- TPRM links to `https://tprm.akarshsingh.com` (live)
+- Screenshots served from `assets/screenshots/` — worky-1/2/3.png and peony-1/2/3.png
+
 **Contact form** (`/contact`):
 - Formspree endpoint: `https://formspree.io/f/mjgpebkg` — do not change without confirming
 - JS intercepts submit and shows an inline success banner (no page reload)
@@ -97,3 +108,4 @@ Footer:
 - **No per-page custom color palettes** — all pages share the amber/zinc/warm-surface theme
 - **Tailwind via CDN only** — no npm, no PostCSS, no build pipeline
 - When adding a new app's privacy policy, use `/<appname>/privacy/index.html`, publish under "SD Solutions NC" branding, and add it to the sitemap
+- **Photo placeholder** — homepage uses an SVG avatar circle at `assets/photo.jpg` path; swap in `<img src="/assets/photo.jpg">` when a real photo is provided
