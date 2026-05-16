@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TPRM — Third-Party Risk Management Platform</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"] },
+          colors: {
+            surface:  "#f9f8f6",
+            elevated: "#f2f0ec",
+            card:     "#ffffff",
+            border:   "#e6e2db",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="min-h-dvh bg-surface text-zinc-700 antialiased font-sans flex flex-col" style="background-color:#f9f8f6;">
+
+  <header class="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur-md">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+      <a href="/" class="text-base font-extrabold text-zinc-900 tracking-tight hover:text-amber-600 transition-colors duration-200">
+        Akarsh Singh
+      </a>
+      <a href="/" class="inline-flex items-center gap-1.5 text-xs text-zinc-400 hover:text-zinc-700 transition-colors duration-200">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        Back
+      </a>
+    </div>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-14 flex-1 w-full">
+
+    <!-- App Hero -->
+    <div class="flex flex-col sm:flex-row sm:items-center gap-6 mb-10 pb-10 border-b border-border">
+      <div class="w-20 h-20 rounded-2xl flex items-center justify-center flex-shrink-0" style="background:linear-gradient(135deg,#b45309,#92400e);box-shadow:0 8px 24px rgba(180,83,9,0.3);">
+        <svg class="w-9 h-9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="flex-1">
+        <p class="text-[10px] font-bold text-amber-600 uppercase tracking-[0.16em] mb-1">SaaS Platform &middot; Live</p>
+        <h1 class="text-3xl font-extrabold text-zinc-900 tracking-tight mb-1">TPRM</h1>
+        <p class="text-sm text-zinc-500">Third-party risk management, simplified</p>
+      </div>
+      <div class="flex flex-shrink-0 gap-3">
+        <a href="https://tprm.akarshsingh.com" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3 rounded-xl bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold shadow-md shadow-amber-100 transition-all duration-200">
+          View Platform &rarr;
+        </a>
+        <a href="/contact" class="inline-flex items-center px-5 py-3 rounded-xl border border-border bg-card hover:border-amber-400 text-zinc-600 text-sm font-semibold transition-all duration-200">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+
+    <!-- Tagline -->
+    <div class="mb-10">
+      <h2 class="text-2xl font-extrabold text-zinc-900 tracking-tight leading-snug mb-3">
+        Vendor risk without<br>the spreadsheet.
+      </h2>
+      <p class="text-sm text-zinc-500 leading-relaxed max-w-xl">
+        Most TPRM programs live in spreadsheets and get reviewed once a year. This platform turns vendor risk into a living, auditable program &mdash; standardized assessments, automatic risk scoring, AI-assisted questionnaire research, and integrations that push findings where your team already works.
+      </p>
+    </div>
+
+    <!-- Features -->
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+      <div class="rounded-xl border border-border bg-card p-5">
+        <div class="w-9 h-9 rounded-lg bg-amber-50 flex items-center justify-center mb-3">
+          <svg class="w-4 h-4 text-amber-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+        </div>
+        <h3 class="text-sm font-bold text-zinc-900 mb-1">AI-Assisted Research</h3>
+        <p class="text-xs text-zinc-500 leading-relaxed">Automatically researches vendors from public sources and pre-fills assessment questionnaires using Claude AI. Cut review time dramatically.</p>
+      </div>
+      <div class="rounded-xl border border-border bg-card p-5">
+        <div class="w-9 h-9 rounded-lg bg-amber-50 flex items-center justify-center mb-3">
+          <svg class="w-4 h-4 text-amber-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10"/><path d="M12 20V4"/><path d="M6 20v-6"/></svg>
+        </div>
+        <h3 class="text-sm font-bold text-zinc-900 mb-1">Automatic Risk Scoring</h3>
+        <p class="text-xs text-zinc-500 leading-relaxed">Every submitted assessment produces a 0&ndash;100 risk score with low, medium, high, and critical thresholds &mdash; no manual calculation.</p>
+      </div>
+      <div class="rounded-xl border border-border bg-card p-5">
+        <div class="w-9 h-9 rounded-lg bg-amber-50 flex items-center justify-center mb-3">
+          <svg class="w-4 h-4 text-amber-600" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        </div>
+        <h3 class="text-sm font-bold text-zinc-900 mb-1">Integrations &amp; Alerts</h3>
+        <p class="text-xs text-zinc-500 leading-relaxed">Jira and Slack integrations built in. Automatic notifications for upcoming review dates, high-risk findings, and completed AI research.</p>
+      </div>
+    </div>
+
+    <!-- Why it exists -->
+    <div class="rounded-xl border border-border bg-card p-6 mb-8">
+      <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-[0.14em] mb-3">Built from real experience</p>
+      <p class="text-sm text-zinc-600 leading-relaxed">
+        This platform came from running TPRM programs in production &mdash; the kind where vendors pile up in a spreadsheet, review dates slip, and nobody knows which ones are actually high-risk until something goes wrong. TPRM centralizes vendor assessments, enforces consistent evaluation criteria, and uses AI to do the research legwork so your team can focus on decisions, not data entry.
+      </p>
+    </div>
+
+    <!-- Tech strip -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div class="rounded-lg border border-border bg-card px-4 py-3 text-center">
+        <p class="text-xs font-bold text-zinc-900 mb-0.5">React + Node.js</p>
+        <p class="text-[10px] text-zinc-400">Full-stack</p>
+      </div>
+      <div class="rounded-lg border border-border bg-card px-4 py-3 text-center">
+        <p class="text-xs font-bold text-zinc-900 mb-0.5">PostgreSQL</p>
+        <p class="text-[10px] text-zinc-400">Structured data</p>
+      </div>
+      <div class="rounded-lg border border-border bg-card px-4 py-3 text-center">
+        <p class="text-xs font-bold text-zinc-900 mb-0.5">Role-Based Access</p>
+        <p class="text-[10px] text-zinc-400">Admin / Standard / Viewer</p>
+      </div>
+      <div class="rounded-lg border border-border bg-card px-4 py-3 text-center">
+        <p class="text-xs font-bold text-zinc-900 mb-0.5">Self-Hosted</p>
+        <p class="text-[10px] text-zinc-400">DigitalOcean + Docker</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="border-t border-border py-8 mt-auto">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <p class="text-xs text-zinc-400">Akarsh Singh &middot; Raleigh-Durham, NC</p>
+      <a href="/sitemap" class="text-[10px] text-zinc-300 hover:text-zinc-500 transition-colors mt-1 inline-block">Sitemap</a>
+    </div>
+  </footer>
+
+</body>
+</html>
