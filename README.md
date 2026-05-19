@@ -23,6 +23,14 @@ website/
 └── docs/                   # Supporting docs
 ```
 
+## Version History (branches)
+
+| Branch | Description |
+|--------|-------------|
+| `main` | Current site — full portfolio, app pages, Tailwind design system |
+| `dev-update` | Active development branch |
+| `v0` | Original "Coming soon" placeholder (Oct 2025) |
+
 ## Deploy
 
 ```bash
