@@ -25,113 +25,36 @@
 </head>
 <body class="min-h-dvh bg-surface text-[#f0f0f0] antialiased font-sans" style="background-color:#111111;">
 
-  <header class="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur-md">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-      <a href="/" class="text-base font-extrabold text-zinc-900 tracking-tight hover:text-amber-600 transition-colors duration-200">
-        Akarsh Singh
-      </a>
-      <a href="/contact" class="inline-flex items-center px-4 py-2 rounded-lg bg-amber-600 hover:bg-amber-500 text-white text-xs font-semibold transition-all duration-200">
-        Contact
-      </a>
-    </div>
-  </header>
+  <!-- Split layout wrapper -->
+  <div class="flex min-h-dvh">
 
-  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-14 flex-1 w-full">
-
-    <!-- Hero -->
-    <div class="flex items-start gap-6 sm:gap-8 mb-14">
-      <!-- Headshot -->
-      <img src="/assets/photo.jpg" alt="Akarsh Singh" class="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border-4 border-card shadow-sm flex-shrink-0">
-
-      <div class="flex-1 pt-1">
-        <!-- Status badge -->
-        <div class="inline-flex items-center gap-2 bg-card border border-border rounded-full px-3 py-1 mb-4">
-          <span class="w-2 h-2 rounded-full bg-green-500 flex-shrink-0"></span>
-          <span class="text-[10px] font-semibold text-zinc-500 uppercase tracking-widest">Cybersecurity Engineer &middot; Raleigh-Durham, NC</span>
-        </div>
-
-        <!-- Headline -->
-        <h1 class="text-2xl sm:text-3xl font-extrabold text-zinc-900 leading-tight tracking-tight mb-3">
-          Threat detection.<br>
-          Vulnerability management.<br>
-          <span class="text-amber-600">Security that scales.</span>
-        </h1>
-
-        <!-- Tagline -->
-        <p class="text-sm text-zinc-500 leading-relaxed mb-5 max-w-lg">
-          4+ years securing cloud infrastructure, SaaS environments, and endpoints. I build detection coverage, run vulnerability programs, and automate the operational work that slows security teams down.
-        </p>
-
-        <!-- Cert badges -->
-        <div class="flex flex-wrap gap-2">
-          <span class="bg-card border border-border text-zinc-600 text-[11px] font-medium px-2.5 py-1 rounded-md">CompTIA Security+</span>
-          <span class="bg-card border border-border text-zinc-600 text-[11px] font-medium px-2.5 py-1 rounded-md">CCSK v5</span>
-          <span class="bg-card border border-border text-zinc-600 text-[11px] font-medium px-2.5 py-1 rounded-md">ITIL 4</span>
-          <span class="bg-card border border-border text-zinc-600 text-[11px] font-medium px-2.5 py-1 rounded-md">CrowdStrike &middot; Okta &middot; AWS</span>
-        </div>
-      </div>
+    <!-- LEFT PANEL — fixed photo (desktop) / hidden on mobile -->
+    <div class="hidden md:block md:w-1/2 lg:w-5/12 fixed top-0 left-0 h-full">
+      <img
+        src="/assets/photo.jpg"
+        alt="Akarsh Singh"
+        class="w-full h-full object-cover object-top"
+      >
+      <!-- right-edge vignette to blend into content panel -->
+      <div class="absolute inset-0" style="background: linear-gradient(to right, transparent 55%, #111111 100%);"></div>
     </div>
 
-    <!-- About divider -->
-    <div class="flex items-center gap-3 mb-8">
-      <div class="h-px flex-1 bg-border"></div>
-      <span class="text-[10px] font-semibold text-zinc-400 uppercase tracking-[0.2em]">About</span>
-      <div class="h-px flex-1 bg-border"></div>
+    <!-- Mobile photo banner (hidden on md+) -->
+    <div class="md:hidden w-full h-[40vh] relative flex-shrink-0">
+      <img
+        src="/assets/photo.jpg"
+        alt="Akarsh Singh"
+        class="w-full h-full object-cover object-top"
+      >
+      <div class="absolute inset-0" style="background: linear-gradient(to bottom, transparent 50%, #111111 100%);"></div>
     </div>
 
-    <!-- About cards -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-      <!-- Background -->
-      <div class="rounded-xl border border-border bg-card p-6">
-        <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-[0.14em] mb-3">Background</p>
-        <p class="text-sm text-zinc-600 leading-relaxed">
-          Security professional with 4+ years across endpoint security, cloud infrastructure, and compliance-driven environments. Started in device lifecycle and systems administration, grew into owning security programs end-to-end &mdash; from SIEM deployment to penetration test coordination to AI governance.
-        </p>
-      </div>
-
-      <!-- Core Disciplines -->
-      <div class="rounded-xl border border-border bg-card p-6">
-        <p class="text-[10px] font-bold text-zinc-400 uppercase tracking-[0.14em] mb-3">Core Disciplines</p>
-        <ul class="space-y-2">
-          <li class="flex items-center gap-2 text-sm text-zinc-600">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>SIEM &amp; Threat Detection
-          </li>
-          <li class="flex items-center gap-2 text-sm text-zinc-600">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>Endpoint Detection &amp; Response
-          </li>
-          <li class="flex items-center gap-2 text-sm text-zinc-600">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>Vulnerability Management
-          </li>
-          <li class="flex items-center gap-2 text-sm text-zinc-600">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>Penetration Testing
-          </li>
-          <li class="flex items-center gap-2 text-sm text-zinc-600">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>Workstation &amp; Device Management
-          </li>
-          <li class="flex items-center gap-2 text-sm text-zinc-600">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>Compliance &amp; Security Frameworks
-          </li>
-          <li class="flex items-center gap-2 text-sm text-zinc-600">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>Third-Party Risk Management
-          </li>
-          <li class="flex items-center gap-2 text-sm text-zinc-600">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>Cloud &amp; SaaS Security
-          </li>
-          <li class="flex items-center gap-2 text-sm text-zinc-600">
-            <span class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></span>AI Governance &amp; Automation
-          </li>
-        </ul>
-      </div>
+    <!-- RIGHT PANEL — scrollable content -->
+    <div class="w-full md:w-1/2 lg:w-7/12 md:ml-auto flex flex-col min-h-dvh">
+      <!-- content goes here -->
     </div>
 
-  </main>
-
-  <footer class="border-t border-border py-8 mt-auto">
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-      <p class="text-xs text-zinc-400">Akarsh Singh &middot; Raleigh-Durham, NC</p>
-      <a href="/sitemap" class="text-[10px] text-zinc-300 hover:text-zinc-500 transition-colors mt-1 inline-block">Sitemap</a>
-    </div>
-  </footer>
+  </div>
 
 </body>
 </html>
