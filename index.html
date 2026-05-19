@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>More Coming Soon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+      :root {
+        color-scheme: light dark;
+        --bg: #0b0c10;
+        --fg: #c5c6c7;
+        --accent: #66fcf1;
+        --muted: #45a29e;
+      }
+
+      html, body {
+        height: 100%;
+        margin: 0;
+      }
+
+      body {
+        display: flex;
+        min-height: 100dvh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: var(--bg);
+        color: var(--fg);
+        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
+        line-height: 1.6;
+      }
+
+      main {
+        text-align: center;
+        padding: 2rem;
+      }
+
+      h1 {
+        margin: 0 0 1.25rem;
+        font-size: clamp(3rem, 10vw, 6rem);
+        letter-spacing: 0.02em;
+        font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+      }
+
+      .links {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        font-size: 0.95rem;
+      }
+
+      .domain {
+        margin-top: 1rem;
+        color: var(--muted);
+        font-size: 0.9rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px dashed color-mix(in lab, var(--accent) 65%, transparent);
+      }
+
+      a:hover, a:focus-visible {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Coming soon</h1>
+      <div class="links">
+        <a href="https://www.linkedin.com/in/asinghnc/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span aria-hidden="true">·</span>
+        <a href="https://github.com/asingh713" target="_blank" rel="noopener noreferrer">GitHub</a>
+      </div>
+      <div class="domain">akarshsingh.com</div>
+    </main>
+  </body>
+  </html>
+
+
