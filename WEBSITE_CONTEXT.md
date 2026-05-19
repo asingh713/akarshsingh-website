@@ -55,17 +55,16 @@ All pages share the same design system. Do not deviate from these without updati
 **Custom Tailwind colors (defined inline in each page's `<script>` block):**
 ```js
 colors: {
-  surface:  "#f9f8f6",   // page background
-  elevated: "#f2f0ec",   // subtle section backgrounds
-  card:     "#ffffff",   // card/panel backgrounds
-  border:   "#e6e2db",   // borders
+  surface:  "#111111",   // page background
+  card:     "#1e1e1e",   // card/panel backgrounds
+  border:   "#2a2a2a",   // borders
 }
 ```
 
-**Body background:** `background-color: #f9f8f6;` (flat, no gradient — clean light look)
-**Body text color:** `text-zinc-700`
+**Body background:** `background-color: #111111;` (flat dark charcoal)
+**Body text color:** `text-[#f0f0f0]`
 **Heading color:** `text-zinc-900`
-**Secondary/muted text:** `text-zinc-500` or `text-zinc-400`
+**Secondary/muted text:** `text-[#888888]` or `text-[#555555]`
 **Accent color:** Amber — buttons use `bg-amber-600 hover:bg-amber-500`, labels use `text-amber-600`
 **Card borders:** `border border-border bg-card` — white cards on the warm background
 **Left-border accent on service cards:** `border-l-4 border-l-amber-500/60`
@@ -107,11 +106,10 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
 ## Pages — Current State
 
 ### `/` — Homepage (`index.html`)
-- Professional homepage with hero + about section
-- **Header (sticky):** "Akarsh Singh" (text-base font-extrabold) left, amber "Contact" button right
-- **Hero:** circular photo placeholder + green dot badge (Cybersecurity Engineer · Raleigh-Durham, NC) + H1 headline with amber accent + tagline + cert/tool badges (Security+, CCSK v5, ITIL 4, CrowdStrike · Okta · AWS)
-- **About:** labeled divider + 2-col cards — Background prose + Core Disciplines amber-dot list (9 items)
-- **Footer:** centered "Akarsh Singh · Raleigh-Durham, NC" + small Sitemap link
+- Professional homepage with split-screen layout — photo panel (left) + content panel (right)
+- **Layout:** Split-screen — fixed full-height photo panel (left, desktop only), scrollable content panel (right). Mobile: photo collapses to 40vh top banner.
+- **Header:** None — name `"Akarsh Singh"` lives as `<h1>` at top of right panel
+- **Headline:** "Cybersecurity engineer with 4+ years protecting workstations, cloud infrastructure, and SaaS environments."
 - **Photo:** placeholder SVG circle; swap to `<img src="/assets/photo.jpg">` when real photo provided
 
 ### `/contact` — Contact Page
@@ -212,7 +210,7 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
 - **Privacy page headers say "SD Solutions NC"** — not "Akarsh Singh" — both Worky v3 and Peony are published under SD Solutions NC
 - **Consulting page is intentionally vague** — prior versions were too specific about pain points and industries, which the user felt would deter people who didn't match exactly. Keep copy high-level and encouraging.
 - **sds-consulting is NOT in the sitemap** — keep it this way until user decides it's ready to promote
-- **Dark theme was deliberately removed** — user found it "depressing." Do not revert to dark.
+- **Dark charcoal theme** — site uses dark charcoal (`#111111`). Do not revert to light.
 - **Light theme CTA section** on consulting page uses `bg-amber-50 border border-amber-200` instead of a dark gradient
 - **All pages use the same amber/zinc/warm-surface theme** — do not introduce per-page custom color palettes
 

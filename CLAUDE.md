@@ -47,14 +47,13 @@ Each route is a directory with an `index.html` inside it, so `akarshsingh.com/fo
 **Custom color tokens** (defined inline in each page's `<script>` block):
 ```js
 colors: {
-  surface:  "#f9f8f6",  // page background
-  elevated: "#f2f0ec",  // subtle section backgrounds
-  card:     "#ffffff",  // card/panel backgrounds
-  border:   "#e6e2db",  // borders
+  surface:  "#111111",  // page background
+  card:     "#1e1e1e",  // card/panel backgrounds
+  border:   "#2a2a2a",  // borders
 }
 ```
 
-**Body:** `class="min-h-dvh bg-surface text-zinc-700 antialiased font-sans flex flex-col"` + `style="background-color: #f9f8f6;"` (flat, no gradient)
+**Body:** `class="min-h-dvh bg-surface text-[#f0f0f0] antialiased font-sans"` + `style="background-color: #111111;"` (flat dark charcoal)
 
 **Key recurring patterns:**
 
@@ -104,7 +103,7 @@ Footer:
 
 - **No copyright symbol** — user preference
 - **No emoji** in any page content
-- **No dark theme** — was deliberately removed, do not revert
+- **Dark theme** — site uses charcoal dark (`#111111` surface, `#1e1e1e` cards, `#2a2a2a` borders). Do not revert to light theme.
 - **No per-page custom color palettes** — all pages share the amber/zinc/warm-surface theme
 - **Tailwind via CDN only** — no npm, no PostCSS, no build pipeline
 - When adding a new app's privacy policy, use `/<appname>/privacy/index.html`, publish under "SD Solutions NC" branding, and add it to the sitemap
