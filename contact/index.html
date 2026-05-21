@@ -12,30 +12,25 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
-          },
+          fontFamily: { sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"] },
           colors: {
-            surface:  "#f9f8f6",
-            elevated: "#f2f0ec",
-            card:     "#ffffff",
-            border:   "#e6e2db",
+            surface:  "#111111",
+            card:     "#1e1e1e",
+            border:   "#2a2a2a",
           },
         },
       },
     };
   </script>
 </head>
-<body
-  class="min-h-dvh bg-surface text-zinc-700 antialiased font-sans flex flex-col"
-  style="background-color: #f9f8f6;">
+<body class="min-h-dvh bg-surface text-[#f0f0f0] antialiased font-sans flex flex-col" style="background-color:#111111;">
 
   <header class="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur-md">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-      <a href="/" class="text-base font-extrabold text-zinc-900 tracking-tight hover:text-amber-600 transition-colors duration-200">
+      <a href="/" class="text-base font-extrabold text-[#f0f0f0] tracking-tight hover:text-amber-500 transition-colors duration-200">
         Akarsh Singh
       </a>
-      <a href="/" class="inline-flex items-center gap-1.5 text-xs text-zinc-400 hover:text-zinc-700 transition-colors duration-200">
+      <a href="/" class="inline-flex items-center gap-1.5 text-xs text-[#555555] hover:text-[#888888] transition-colors duration-200">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
         Back
       </a>
@@ -45,22 +40,22 @@
   <main class="max-w-3xl mx-auto px-4 sm:px-6 py-14 flex-1 w-full">
 
     <div class="mb-10">
-      <p class="text-xs font-semibold text-amber-600 uppercase tracking-[0.2em] mb-3">Get in touch</p>
-      <h1 class="text-4xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight leading-tight mb-4">
+      <p class="text-xs font-semibold text-amber-500 uppercase tracking-[0.2em] mb-3">Get in touch</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-[#f0f0f0] tracking-tight leading-tight mb-4">
         Contact
       </h1>
-      <p class="text-zinc-500 leading-relaxed max-w-md">
+      <p class="text-[#888888] leading-relaxed max-w-md">
         Whether it's for opportunities, projects, volunteering, or just to chat — feel free to reach out.
       </p>
     </div>
 
-    <div class="rounded-xl border border-border bg-card shadow-sm p-6 sm:p-8 relative overflow-hidden">
-      <div class="absolute top-4 right-4 opacity-[0.05] pointer-events-none select-none" aria-hidden="true">
+    <div class="rounded-xl border border-border bg-card p-6 sm:p-8 relative overflow-hidden">
+      <div class="absolute top-4 right-4 opacity-[0.04] pointer-events-none select-none" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-32 h-32 text-amber-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
       </div>
 
-      <!-- Success message (hidden by default) -->
-      <div id="success-msg" class="hidden rounded-lg border border-green-300 bg-green-50 px-5 py-4 mb-6 text-green-700 text-sm font-medium">
+      <!-- Success message -->
+      <div id="success-msg" class="hidden rounded-lg border border-green-700 px-5 py-4 mb-6 text-green-400 text-sm font-medium" style="background:rgba(21,128,61,0.15);">
         Message sent — I'll get back to you soon.
       </div>
 
@@ -73,48 +68,42 @@
         <input type="hidden" name="_subject" value="Contact — akarshsingh.com">
 
         <div>
-          <label for="name" class="block text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-2">
-            Name
-          </label>
+          <label for="name" class="block text-xs font-semibold text-[#555555] uppercase tracking-wider mb-2">Name</label>
           <input
             type="text"
             id="name"
             name="name"
             required
             placeholder="Your name"
-            class="w-full rounded-lg border border-border bg-surface px-4 py-3 text-zinc-900 placeholder:text-zinc-400 transition-colors duration-200 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400/20">
+            class="w-full rounded-lg border border-border bg-surface px-4 py-3 text-[#f0f0f0] placeholder:text-[#444444] transition-colors duration-200 focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/20">
         </div>
 
         <div>
-          <label for="email" class="block text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-2">
-            Email
-          </label>
+          <label for="email" class="block text-xs font-semibold text-[#555555] uppercase tracking-wider mb-2">Email</label>
           <input
             type="email"
             id="email"
             name="email"
             required
             placeholder="you@example.com"
-            class="w-full rounded-lg border border-border bg-surface px-4 py-3 text-zinc-900 placeholder:text-zinc-400 transition-colors duration-200 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400/20">
+            class="w-full rounded-lg border border-border bg-surface px-4 py-3 text-[#f0f0f0] placeholder:text-[#444444] transition-colors duration-200 focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/20">
         </div>
 
         <div>
-          <label for="message" class="block text-xs font-semibold text-zinc-500 uppercase tracking-wider mb-2">
-            Message
-          </label>
+          <label for="message" class="block text-xs font-semibold text-[#555555] uppercase tracking-wider mb-2">Message</label>
           <textarea
             id="message"
             name="message"
             rows="5"
             required
             placeholder="How can I help?"
-            class="w-full rounded-lg border border-border bg-surface px-4 py-3 text-zinc-900 placeholder:text-zinc-400 transition-colors duration-200 focus:border-amber-400 focus:outline-none focus:ring-2 focus:ring-amber-400/20 resize-y min-h-[120px]"></textarea>
+            class="w-full rounded-lg border border-border bg-surface px-4 py-3 text-[#f0f0f0] placeholder:text-[#444444] transition-colors duration-200 focus:border-amber-500 focus:outline-none focus:ring-2 focus:ring-amber-500/20 resize-y min-h-[120px]"></textarea>
         </div>
 
         <button
           type="submit"
           id="submit-btn"
-          class="w-full rounded-lg bg-amber-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-200 hover:bg-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 disabled:opacity-50 disabled:cursor-not-allowed">
+          class="w-full rounded-lg bg-amber-600 px-4 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-amber-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 disabled:opacity-50 disabled:cursor-not-allowed">
           Send Message →
         </button>
       </form>
@@ -122,22 +111,23 @@
 
     <div class="mt-8 flex flex-wrap gap-4 justify-center">
       <a href="https://www.linkedin.com/in/asinghnc/" target="_blank" rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-amber-600 transition-colors duration-200">
+        class="inline-flex items-center gap-2 text-sm text-[#555555] hover:text-amber-500 transition-colors duration-200">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
         LinkedIn
       </a>
       <a href="https://github.com/asingh713" target="_blank" rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 text-sm text-zinc-400 hover:text-amber-600 transition-colors duration-200">
+        class="inline-flex items-center gap-2 text-sm text-[#555555] hover:text-amber-500 transition-colors duration-200">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.2c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
         GitHub
       </a>
     </div>
+
   </main>
 
   <footer class="border-t border-border py-8 mt-auto">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-      <p class="text-xs text-zinc-400">Akarsh Singh &middot; Raleigh-Durham, NC</p>
-      <a href="/sitemap" class="text-[10px] text-zinc-300 hover:text-zinc-500 transition-colors mt-1 inline-block">Sitemap</a>
+      <p class="text-xs text-[#555555]">Akarsh Singh &middot; Raleigh-Durham, NC</p>
+      <a href="/sitemap" class="text-[10px] text-[#444444] hover:text-[#888888] transition-colors mt-1 inline-block">Sitemap</a>
     </div>
   </footer>
 

@@ -12,30 +12,25 @@
     tailwind.config = {
       theme: {
         extend: {
-          fontFamily: {
-            sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"],
-          },
+          fontFamily: { sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"] },
           colors: {
-            surface:  "#f9f8f6",
-            elevated: "#f2f0ec",
-            card:     "#ffffff",
-            border:   "#e6e2db",
+            surface:  "#111111",
+            card:     "#1e1e1e",
+            border:   "#2a2a2a",
           },
         },
       },
     };
   </script>
 </head>
-<body
-  class="min-h-dvh bg-surface text-zinc-700 antialiased font-sans flex flex-col"
-  style="background-color: #f9f8f6;">
+<body class="min-h-dvh bg-surface text-[#f0f0f0] antialiased font-sans flex flex-col" style="background-color:#111111;">
 
   <header class="sticky top-0 z-50 border-b border-border bg-surface/95 backdrop-blur-md">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
-      <a href="/" class="text-base font-extrabold text-zinc-900 tracking-tight hover:text-amber-600 transition-colors duration-200">
+      <a href="/" class="text-base font-extrabold text-[#f0f0f0] tracking-tight hover:text-amber-500 transition-colors duration-200">
         Akarsh Singh
       </a>
-      <a href="/" class="inline-flex items-center gap-1.5 text-xs text-zinc-400 hover:text-zinc-700 transition-colors duration-200">
+      <a href="/" class="inline-flex items-center gap-1.5 text-xs text-[#555555] hover:text-[#888888] transition-colors duration-200">
         <svg xmlns="http://www.w3.org/2000/svg" class="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
         Back
       </a>
@@ -45,8 +40,8 @@
   <main class="max-w-3xl mx-auto px-4 sm:px-6 py-14 flex-1 w-full">
 
     <div class="mb-10">
-      <p class="text-xs font-semibold text-amber-600 uppercase tracking-[0.2em] mb-3">akarshsingh.com</p>
-      <h1 class="text-4xl sm:text-5xl font-extrabold text-zinc-900 tracking-tight leading-tight">
+      <p class="text-xs font-semibold text-amber-500 uppercase tracking-[0.2em] mb-3">akarshsingh.com</p>
+      <h1 class="text-4xl sm:text-5xl font-extrabold text-[#f0f0f0] tracking-tight leading-tight">
         Sitemap
       </h1>
     </div>
@@ -54,78 +49,78 @@
     <div class="space-y-8">
 
       <div class="rounded-xl border border-border bg-card p-6 sm:p-8">
-        <h2 class="text-[10px] font-semibold text-zinc-400 uppercase tracking-[0.2em] mb-4">Pages</h2>
+        <h2 class="text-[10px] font-semibold text-[#555555] uppercase tracking-[0.2em] mb-4">Pages</h2>
         <ul class="space-y-3">
           <li>
             <a href="/" class="group flex items-center justify-between">
-              <span class="text-sm text-zinc-700 group-hover:text-amber-600 transition-colors">Home</span>
-              <span class="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors">akarshsingh.com/</span>
+              <span class="text-sm text-[#f0f0f0] group-hover:text-amber-500 transition-colors">Home</span>
+              <span class="text-xs text-[#555555] group-hover:text-[#888888] transition-colors">akarshsingh.com/</span>
             </a>
           </li>
           <li class="border-t border-border pt-3">
             <a href="/contact" class="group flex items-center justify-between">
-              <span class="text-sm text-zinc-700 group-hover:text-amber-600 transition-colors">Contact</span>
-              <span class="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors">akarshsingh.com/contact</span>
+              <span class="text-sm text-[#f0f0f0] group-hover:text-amber-500 transition-colors">Contact</span>
+              <span class="text-xs text-[#555555] group-hover:text-[#888888] transition-colors">akarshsingh.com/contact</span>
             </a>
           </li>
           <li class="border-t border-border pt-3">
             <a href="/sitemap" class="group flex items-center justify-between">
-              <span class="text-sm text-zinc-700 group-hover:text-amber-600 transition-colors">Sitemap</span>
-              <span class="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors">akarshsingh.com/sitemap</span>
+              <span class="text-sm text-[#f0f0f0] group-hover:text-amber-500 transition-colors">Sitemap</span>
+              <span class="text-xs text-[#555555] group-hover:text-[#888888] transition-colors">akarshsingh.com/sitemap</span>
             </a>
           </li>
         </ul>
       </div>
 
       <div class="rounded-xl border border-border bg-card p-6 sm:p-8">
-        <h2 class="text-[10px] font-semibold text-zinc-400 uppercase tracking-[0.2em] mb-4">Apps</h2>
+        <h2 class="text-[10px] font-semibold text-[#555555] uppercase tracking-[0.2em] mb-4">Apps</h2>
         <ul class="space-y-3">
           <li>
             <a href="/worky" class="group flex items-center justify-between">
-              <span class="text-sm text-zinc-700 group-hover:text-amber-600 transition-colors">Worky v3</span>
-              <span class="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors">akarshsingh.com/worky</span>
+              <span class="text-sm text-[#f0f0f0] group-hover:text-amber-500 transition-colors">Worky</span>
+              <span class="text-xs text-[#555555] group-hover:text-[#888888] transition-colors">akarshsingh.com/worky</span>
             </a>
           </li>
           <li class="border-t border-border pt-3">
             <a href="/worky/privacy" class="group flex items-center justify-between">
-              <span class="text-sm text-zinc-700 group-hover:text-amber-600 transition-colors">Worky v3 &mdash; Privacy Policy</span>
-              <span class="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors">akarshsingh.com/worky/privacy</span>
+              <span class="text-sm text-[#f0f0f0] group-hover:text-amber-500 transition-colors">Worky &mdash; Privacy &amp; Terms</span>
+              <span class="text-xs text-[#555555] group-hover:text-[#888888] transition-colors">akarshsingh.com/worky/privacy</span>
             </a>
           </li>
           <li class="border-t border-border pt-3">
             <a href="/peony" class="group flex items-center justify-between">
-              <span class="text-sm text-zinc-700 group-hover:text-amber-600 transition-colors">Peony</span>
-              <span class="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors">akarshsingh.com/peony</span>
+              <span class="text-sm text-[#f0f0f0] group-hover:text-amber-500 transition-colors">Peony</span>
+              <span class="text-xs text-[#555555] group-hover:text-[#888888] transition-colors">akarshsingh.com/peony</span>
             </a>
           </li>
           <li class="border-t border-border pt-3">
             <a href="/peony/privacy" class="group flex items-center justify-between">
-              <span class="text-sm text-zinc-700 group-hover:text-amber-600 transition-colors">Peony &mdash; Privacy Policy</span>
-              <span class="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors">akarshsingh.com/peony/privacy</span>
+              <span class="text-sm text-[#f0f0f0] group-hover:text-amber-500 transition-colors">Peony &mdash; Privacy Policy</span>
+              <span class="text-xs text-[#555555] group-hover:text-[#888888] transition-colors">akarshsingh.com/peony/privacy</span>
             </a>
           </li>
           <li class="border-t border-border pt-3">
             <a href="/tprm" class="group flex items-center justify-between">
-              <span class="text-sm text-zinc-700 group-hover:text-amber-600 transition-colors">TPRM</span>
-              <span class="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors">akarshsingh.com/tprm</span>
+              <span class="text-sm text-[#f0f0f0] group-hover:text-amber-500 transition-colors">TPRM</span>
+              <span class="text-xs text-[#555555] group-hover:text-[#888888] transition-colors">akarshsingh.com/tprm</span>
             </a>
           </li>
         </ul>
       </div>
 
       <div class="rounded-xl border border-border bg-card p-6 sm:p-8">
-        <h2 class="text-[10px] font-semibold text-zinc-400 uppercase tracking-[0.2em] mb-4">Elsewhere</h2>
+        <h2 class="text-[10px] font-semibold text-[#555555] uppercase tracking-[0.2em] mb-4">Elsewhere</h2>
         <ul class="space-y-3">
           <li>
             <a href="https://www.linkedin.com/in/asinghnc/" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between">
-              <span class="text-sm text-zinc-700 group-hover:text-amber-600 transition-colors">LinkedIn</span>
-              <span class="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors">linkedin.com/in/asinghnc</span>
+              <span class="text-sm text-[#f0f0f0] group-hover:text-amber-500 transition-colors">LinkedIn</span>
+              <span class="text-xs text-[#555555] group-hover:text-[#888888] transition-colors">linkedin.com/in/asinghnc</span>
             </a>
           </li>
           <li class="border-t border-border pt-3">
             <a href="https://github.com/asingh713" target="_blank" rel="noopener noreferrer" class="group flex items-center justify-between">
-              <span class="text-sm text-zinc-700 group-hover:text-amber-600 transition-colors">GitHub</span>
-              <span class="text-xs text-zinc-400 group-hover:text-zinc-600 transition-colors">github.com/asingh713</span>
+              <span class="text-sm text-[#f0f0f0] group-hover:text-amber-500 transition-colors">GitHub</span>
+              <span class="text-xs text-[#555555] group-hover:text-[#888888] transition-colors">github.com/asingh713</span>
             </a>
           </li>
         </ul>
@@ -136,8 +131,8 @@
 
   <footer class="border-t border-border py-8 mt-auto">
     <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-      <p class="text-xs text-zinc-400">Akarsh Singh &middot; Raleigh-Durham, NC</p>
-      <a href="/sitemap" class="text-[10px] text-zinc-300 hover:text-zinc-500 transition-colors mt-1 inline-block">Sitemap</a>
+      <p class="text-xs text-[#555555]">Akarsh Singh &middot; Raleigh-Durham, NC</p>
+      <a href="/sitemap" class="text-[10px] text-[#444444] hover:text-[#888888] transition-colors mt-1 inline-block">Sitemap</a>
     </div>
   </footer>
 
