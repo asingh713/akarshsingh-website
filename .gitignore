@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Superpowers local working dir
+.superpowers/
+
+# Editor / OS cruft
+*.swp
+*~
+.vscode/
+.idea/
