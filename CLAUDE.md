@@ -34,7 +34,12 @@ Each route is a directory with an `index.html` inside it, so `akarshsingh.com/fo
 | `worky/privacy/index.html` | `/worky/privacy` — Worky v3 App Store privacy policy |
 | `peony/index.html` | `/peony` — Peony app marketing page |
 | `peony/privacy/index.html` | `/peony/privacy` — Peony App Store privacy policy |
-| `tprm/index.html` | `/tprm` — TPRM SaaS landing page |
+| `vetta/index.html` | `/vetta` — Vetta (formerly TPRM) SaaS landing page |
+| `vetta/privacy/index.html` | `/vetta/privacy` — Privacy Policy |
+| `vetta/terms/index.html` | `/vetta/terms` — Terms of Service |
+| `vetta/cookies/index.html` | `/vetta/cookies` — Cookie Policy |
+| `vetta/refunds/index.html` | `/vetta/refunds` — Refund & Cancellation Policy |
+| `tprm/index.html` | `/tprm` — Redirect stub to `/vetta` (old links) |
 | `sds-consulting/index.html` | `/sds-consulting` — SD Solutions NC (not in sitemap, not launched) |
 | `assets/screenshots/` | Static screenshot images for app pages |
 
@@ -86,11 +91,12 @@ Footer:
   - Worky: `https://akarshsingh.com/worky/privacy`
   - Peony: `https://akarshsingh.com/peony/privacy`
 
-**App pages** (`/worky`, `/peony`, `/tprm`):
+**App pages** (`/worky`, `/peony`, `/vetta`, `/budgy`):
 - Header: "Akarsh Singh" (text-base font-extrabold) left, back arrow right
 - Consumer-focused: app hero with gradient icon, tagline, 3 feature cards, screenshot strip, privacy/CTA callout
 - App Store links currently placeholder (`href="#"`) — update when apps are published
-- TPRM links to `https://tprm.akarshsingh.com` (live)
+- Vetta (formerly TPRM) links to `https://vetta.akarshsingh.com` (live). Old `/tprm` path redirects to `/vetta` — keep the redirect stub, never remove it.
+- Vetta tagline: "Be betta, use Vetta."
 - Screenshots served from `assets/screenshots/` — worky-1/2/3.png and peony-1/2/3.png
 
 **Contact form** (`/contact`):

@@ -24,8 +24,14 @@ website/
 │   ├── index.html                → akarshsingh.com/peony         (Peony app page)
 │   └── privacy/
 │       └── index.html            → akarshsingh.com/peony/privacy  (Peony privacy policy)
+├── vetta/
+│   ├── index.html                → akarshsingh.com/vetta          (Vetta SaaS landing page, formerly TPRM)
+│   ├── privacy/index.html        → akarshsingh.com/vetta/privacy  (Privacy Policy)
+│   ├── terms/index.html          → akarshsingh.com/vetta/terms    (Terms of Service)
+│   ├── cookies/index.html        → akarshsingh.com/vetta/cookies  (Cookie Policy)
+│   └── refunds/index.html        → akarshsingh.com/vetta/refunds  (Refund & Cancellation Policy)
 ├── tprm/
-│   └── index.html                → akarshsingh.com/tprm           (TPRM SaaS landing page)
+│   └── index.html                → akarshsingh.com/tprm           (redirect stub → /vetta, keep for old links)
 ├── assets/
 │   └── screenshots/              → Static screenshot images
 │       ├── worky-1.png           (Workout Days screen)
@@ -175,14 +181,16 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
 - Screenshot strip: peony-1/2/3.png from assets/screenshots/
 - Privacy callout → `/peony/privacy`
 
-### `/tprm` — TPRM SaaS Landing Page (NEW)
+### `/vetta` — Vetta SaaS Landing Page (formerly TPRM, renamed 2026-06)
 - Business-focused SaaS marketing page
 - App hero: amber/brown shield icon, "SaaS Platform · Live" badge
-- CTAs: "View Platform →" → https://tprm.akarshsingh.com, "Get in Touch" → /contact
-- Tagline: "Vendor risk without the spreadsheet."
+- CTAs: "View Platform →" → https://vetta.akarshsingh.com, "Get in Touch" → /contact
+- Tagline: "Be betta, use Vetta." with secondary line "Vendor risk without the spreadsheet."
 - 3 feature cards: AI-Assisted Research, Automatic Risk Scoring, Integrations & Alerts
 - "Built from real experience" prose card
 - Tech strip: React+Node, PostgreSQL, Role-Based Access, Self-Hosted (DigitalOcean+Docker)
+- Legal pages: `/vetta/privacy`, `/vetta/terms`, `/vetta/cookies`, `/vetta/refunds` — contact emails route through `akarshsingh.com/contact` (no dedicated support/privacy email domain yet)
+- Old `/tprm` path is a redirect stub to `/vetta` — keep it, do not delete (preserves old links/bookmarks)
 
 ### `/sds-consulting` — SD Solutions NC Consulting Page
 - **NOT in the sitemap** (intentional — not officially launched yet)
@@ -244,5 +252,5 @@ class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border 
 
 - **Worky v3** — iOS workout tracking app. The website hosts the app's required privacy policy at `/worky/privacy`.
 - **Peony** — iOS period tracking app ("Peony — A Simple Period Tracker"). The website hosts the app's required privacy policy at `/peony/privacy`.
-- **TPRM** — SaaS third-party risk management platform. Live at https://tprm.akarshsingh.com. Repo: github.com/asingh713/tprm (private). Website landing page at `/tprm`.
+- **Vetta** (formerly TPRM) — SaaS third-party risk management platform. Live at https://vetta.akarshsingh.com. Repo: github.com/asingh713/tprm (private, folder name unchanged). Website landing page at `/vetta`; legal pages at `/vetta/privacy`, `/vetta/terms`, `/vetta/cookies`, `/vetta/refunds`. Old `/tprm` path redirects to `/vetta`.
 - **SD Solutions NC** — small business IT consulting. No separate site/domain yet. Currently lives at `akarshsingh.com/sds-consulting`.

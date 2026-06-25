@@ -15,9 +15,13 @@ website/
 │   ├── index.html          # Peony app marketing page
 │   └── privacy/index.html  # Peony App Store privacy policy
 ├── worky/
-│   ├── index.html          # Worky v3 app marketing page
-│   └── privacy/index.html  # Worky v3 App Store privacy policy
-├── tprm/index.html         # TPRM SaaS landing page
+│   ├── index.html          # Worky app marketing page
+│   └── privacy/index.html  # Worky Privacy Policy + Terms of Service
+├── budgy/
+│   ├── index.html          # Budgy app marketing page
+│   └── privacy/index.html  # Budgy Privacy Policy + Terms of Service
+├── vetta/                  # Vetta SaaS landing page (formerly TPRM) + legal pages
+├── tprm/index.html         # Redirect stub → /vetta (old links)
 ├── sds-consulting/         # SD Solutions NC page (not in sitemap)
 ├── sitemap/index.html      # Sitemap
 └── docs/                   # Supporting docs
